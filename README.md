@@ -6,9 +6,9 @@
 
 | Role | Name |
 |---|---|
-| Product Owner | Ali Alhosseini |
+| Product Owner | Nithin |
 | Scrum Master | |
-| Developer | |
+| Developer | Eshwar |
 | Developer | |
 | Developer | |
 
