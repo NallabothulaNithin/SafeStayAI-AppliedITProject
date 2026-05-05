@@ -44,3 +44,13 @@
 - created a branch, updated the session log and create a pukl request.
 - Learned how to merge the branch to main.
 - Discussed about Personas.
+
+# Tuesday 05-05-2026
+## Eshwar yadav
+**What I worked on:**
+- Worked on GitHub Repository.
+
+**What I learned:**
+- By using visual studio created a branch, updated the session log and create a pull request.
+-learned how to create scenarios.
+- Discussed about Personas.
