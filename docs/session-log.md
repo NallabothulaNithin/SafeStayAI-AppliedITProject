@@ -30,7 +30,6 @@
 #Eshwar yadav
 ** What I worked on:**
 - d pull request
->>>>>>> d9ca45a6e8e581e447e165d5f9b612f8b444e498
 
 ** What I learned:**
 - I learned how to create a branch, update, clone, merge and create a pullrequest.
