@@ -7,8 +7,13 @@ Safe Stay AI
 | Role | Name |
 |---|---|
 | Product Owner | Nithin |
+<<<<<<< update/Eshwar
+| Scrum Master | Madhav |
+| Developer | Eshwar yadav jakkula |
+=======
 | Scrum Master | Madhav Borragit  |
 | Developer | Eshwar |
+>>>>>>> main
 | Developer | |
 | Developer | |
 
@@ -31,7 +36,7 @@ service-a  ──►  service-b
 
 | Layer | Technology |
 |---|---|
-| Frontend | |
+| Frontend | Eshwar |
 | Backend | |
 | Database | |
 | Deployment | |
