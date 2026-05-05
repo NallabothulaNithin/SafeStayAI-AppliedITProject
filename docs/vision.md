@@ -6,13 +6,13 @@ _Due: Session 5 — 05 May_
 
 ## Vision Statement
 
-> **For** [target users]  
-> **Who** [have this problem / need]  
-> **Our product** [product name]  
-> **Is a** [category]  
-> **That** [key benefit / reason to use it]  
-> **Unlike** [current alternative]  
-> **Our product** [key differentiator]
+>For students, immigrants, and people searching for rental housing online. 
+>Who face the risk of rental scams, fake apartment listings, and unsafe payment requests. 
+>Our product SafeStay AI.
+>Is an AI-powered rental fraud detection platform. 
+>That helps users identify suspicious housing listings before making payments or signing agreements. 
+>Unlike traditional rental websites that only display listings without fraud analysis.
+>Our product uses machine learning and real rental data to predict scam risk levels, detect suspicious patterns, and improve housing safety for users.
 
 ---
 
@@ -74,9 +74,9 @@ Format: _As a [persona], I want [goal], so that [benefit]._
 
 _List the core features your product must have for a working MVP._
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
+[ ] Feature 1
+[ ] Feature 2
+[ ] Feature 3
 
 ---
 
