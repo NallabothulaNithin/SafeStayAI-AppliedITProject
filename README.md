@@ -1,19 +1,14 @@
 Safe Stay AI
 
-> One-sentence description of what this project does and who it is for.
+> SafeStay AI is an AI-powered rental fraud detection system designed for students, immigrants, and apartment seekers to identify suspicious housing listings and avoid online rental scams.
 
 ## Team
 
 | Role | Name |
 |---|---|
 | Product Owner | Nithin |
-<<<<<<< update/Eshwar
 | Scrum Master | Madhav |
 | Developer | Eshwar yadav jakkula |
-=======
-| Scrum Master | Madhav Borragit  |
-| Developer | Eshwar |
->>>>>>> main
 | Developer | |
 | Developer | |
 
