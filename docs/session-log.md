@@ -67,3 +67,16 @@
 
 **Blockers/Questions:**
 - Need more practice in creating detailed user scenarios.
+
+# Tuesday 07-05-2026
+## Eshwar yadav
+**What I worked on:**
+-- Worked on the documentation and planning phase of the **Safe Stay AI** project.
+- Focused on improving the project’s user-centered design and requirement analysis.
+- Structured project content for GitHub documentation and presentation purposes.
+
+**What I learned:**
+-- Improved project documentation quality
+- Finalized  personas and user stories
+- Gained better understanding of other team projects 
+- Enhanced clarity on project presentation and planning
