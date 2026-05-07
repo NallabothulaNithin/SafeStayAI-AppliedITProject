@@ -54,3 +54,16 @@
 - By using visual studio created a branch, updated the session log and create a pull request.
 -learned how to create scenarios.
 - Discussed about Personas.
+
+# Tuesday 05-05-2026
+## Nithin
+**What I Worked on:**
+- Learned about user personas and scenarios in system design.
+- Created a persona for the SafeStay AI project.
+
+**What I Learned:**
+- Learned the importance of personas in user-centered design.
+- Understood how scenarios help explain user interactions with a system.
+
+**Blockers/Questions:**
+- Need more practice in creating detailed user scenarios.
