@@ -43,15 +43,15 @@ _Who will use this product? Be specific — not "everyone", but a defined group.
 | **Frustrations** | |
 | **Tech comfort** | |
 
-### Persona 3 — [Name]
+### Persona 3 — [Zaplin]
 
 | | |
 |---|---|
-| **Age** | |
-| **Role / Occupation** | |
-| **Goals** | |
-| **Frustrations** | |
-| **Tech comfort** | |
+| **Age** |27 |
+| **Role / Occupation** | Opportunity Card |
+| **Goals** | Find safe and affordable accommodation quickly and get verified housing information |
+| **Frustrations** |Fake listings,delayed responses from landlords and unclear rental details, language barriers |
+| **Tech comfort** | Medium - comfortable using mobile apps and basic online services |
 
 ---
 
