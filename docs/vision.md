@@ -43,15 +43,15 @@ _Who will use this product? Be specific — not "everyone", but a defined group.
 | **Frustrations** |Fear of getting scammed while booking remotely<br>stress caused by relocation and tight deadlines<br>Pressure to secure housing before joining work<br>Difficulty distinguishing genuine landlords from fraudsters |
 | **Tech comfort** |Frequently uses online services for bookings and payments<br>Uses email, video calls, and messaging apps for communication<br>Prefers intuitive and user-friendly interfaces|
 
-### Persona 3 — [Name]
+### Persona 3 — [Zaplin]
 
 | | |
 |---|---|
-| **Age** | |
-| **Role / Occupation** | |
-| **Goals** | |
-| **Frustrations** | |
-| **Tech comfort** | |
+| **Age** |27 |
+| **Role / Occupation** | Opportunity Card |
+| **Goals** | Find safe and affordable accommodation quickly and get verified housing information |
+| **Frustrations** |Fake listings,delayed responses from landlords and unclear rental details, language barriers |
+| **Tech comfort** | Medium - comfortable using mobile apps and basic online services |
 
 ---
 
