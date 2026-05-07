@@ -24,15 +24,14 @@ _Who will use this product? Be specific — not "everyone", but a defined group.
 
 ## Personas
 
-### Persona 1 — [Name]
-
+### Persona 1 — [Yousuf]
 | | |
 |---|---|
-| **Age** | |
-| **Role / Occupation** | |
-| **Goals** | |
-| **Frustrations** | |
-| **Tech comfort** | |
+| **Age** | 23 |
+| **Role / Occupation** | International Master's student. |
+| **Goals** | - Find verified and secure accommodation <br> - Avoid rental scams and fake listing <br> - Compare housing options easily <br> - Get AI-based safety recommendation. |
+| **Frustrations** | - Fake property advertisements<br> - Unclear rental agreements <br> - Lack of trust in online platforms <br> - Compicated housing websites.  |
+| **Tech comfort** | Comfortable using online platforms and mobile application for searching accommodation. |
 
 ### Persona 2 — [Name]
 
