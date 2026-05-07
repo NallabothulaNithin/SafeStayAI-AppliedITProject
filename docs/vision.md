@@ -53,6 +53,16 @@ _Who will use this product? Be specific — not "everyone", but a defined group.
 | **Frustrations** |Fake listings,delayed responses from landlords and unclear rental details, language barriers |
 | **Tech comfort** | Medium - comfortable using mobile apps and basic online services |
 
+
+### Persona  — [Sam]
+
+| | |
+|---|---|
+| **Age** |30 |
+| **Role / Occupation** | Retail Shop Owner |
+| **Goals** | Track sales,manage inventory, with customers |
+| **Frustrations** |Expensive software, lack of automation |
+| **Tech comfort** | Medium |
 ---
 
 ## User Stories
