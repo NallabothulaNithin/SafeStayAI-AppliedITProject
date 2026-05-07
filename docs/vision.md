@@ -74,10 +74,10 @@ Format: _As a [persona], I want [goal], so that [benefit]._
 
 | # | Persona | User Story | Priority |
 |---|---|---|---|
-| US-01 | | | Must-have |
-| US-02 | | | Must-have |
-| US-03 | | | Must-have |
-| US-04 | | | Should-have |
+| US-01 |International Student |As an international student, I want to verify whether an accommodation listing is genuine, so that I can avoid rental scams and financial loss.  | Must-have |
+| US-02 | Working Professional |As a working professional, I want to compare rent prices with market standards, so that I can avoid overpaying for accommodation. | Must-have |
+| US-03 |Retail Shop Owner |As a retail shop owner relocating to a new city, I want to find trustworthy accommodation near my business location, so that I can reduce travel time and settle quickly.  | Must-have |
+| US-04 |Opportunity Card Holder |  As an Opportunity Card holder searching for jobs in Germany, I want to identify safe and affordable housing options, so that I can relocate confidently while managing my budget.| Should-have |
 | US-05 | | | Could-have |
 
 ---
