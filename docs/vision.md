@@ -33,15 +33,15 @@ _Who will use this product? Be specific — not "everyone", but a defined group.
 | **Frustrations** | - Fake property advertisements<br> - Unclear rental agreements <br> - Lack of trust in online platforms <br> - Compicated housing websites.  |
 | **Tech comfort** | Comfortable using online platforms and mobile application for searching accommodation. |
 
-### Persona 2 — [Name]
+### Persona 2 — [Arun kumar]
 
 | | |
 |---|---|
-| **Age** | |
-| **Role / Occupation** | |
-| **Goals** | |
-| **Frustrations** | |
-| **Tech comfort** | |
+| **Age** |22 |
+| **Role / Occupation** | Working professional |
+| **Goals** | Quickly secure reliable housing <br> Avoid fraudulent landlords and fake listings<br> Find housing close to workplace or public transport<br> Make confident financial decisions before paying deposits<br>Access transparent and data-driven rental analysis |
+| **Frustrations** |Fear of getting scammed while booking remotely<br>stress caused by relocation and tight deadlines<br>Pressure to secure housing before joining work<br>Difficulty distinguishing genuine landlords from fraudsters |
+| **Tech comfort** |Frequently uses online services for bookings and payments<br>Uses email, video calls, and messaging apps for communication<br>Prefers intuitive and user-friendly interfaces|
 
 ### Persona 3 — [Name]
 
