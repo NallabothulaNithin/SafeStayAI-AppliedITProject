@@ -18,8 +18,11 @@ _Due: Session 5 — 05 May_
 
 ## Target Users
 
-_Who will use this product? Be specific — not "everyone", but a defined group._
-
+- International student
+- Immigrants and newcomers
+- First-time renters
+- Online apartment seekers
+- People checking suspicious rental listings
 ---
 
 ## Personas
@@ -54,7 +57,7 @@ _Who will use this product? Be specific — not "everyone", but a defined group.
 | **Tech comfort** | Medium - comfortable using mobile apps and basic online services |
 
 
-### Persona  — [Sam]
+### Persona 4  — [Sam]
 
 | | |
 |---|---|
