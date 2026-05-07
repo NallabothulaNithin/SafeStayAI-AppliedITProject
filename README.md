@@ -7,7 +7,6 @@ Safe Stay AI
 | Role | Name |
 |---|---|
 | Product Owner | Nithin |
-<<<<<<< update/Eshwar
 | Scrum Master | Madhav |
 | Developer | Eshwar yadav jakkula |
 =======
