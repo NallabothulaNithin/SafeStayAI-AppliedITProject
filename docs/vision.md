@@ -24,15 +24,9 @@ _Who will use this product? Be specific — not "everyone", but a defined group.
 
 ## Personas
 
-### Persona 1 — [Name]
+### Persona 1 — [Yousuf]
 
-| | |
-|---|---|
-| **Age** | |
-| **Role / Occupation** | |
-| **Goals** | |
-| **Frustrations** | |
-| **Tech comfort** | |
+/Users/nithin/Downloads/Frame 1.png
 
 ### Persona 2 — [Name]
 
