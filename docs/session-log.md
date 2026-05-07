@@ -79,4 +79,4 @@
 -- Improved project documentation quality
 - Finalized  personas and user stories
 - Gained better understanding of other team projects 
-- Enhanced clarity on project presentation and planning
+- Enhanced clarity on project presentation and planning.
