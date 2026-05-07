@@ -62,7 +62,7 @@ _Who will use this product? Be specific — not "everyone", but a defined group.
 | **Role / Occupation** | Retail Shop Owner |
 | **Goals** | Track sales,manage inventory, with customers |
 | **Frustrations** |Expensive software, lack of automation |
-| **Tech comfort** | Medium |
+| **Tech comfort** | Medium|
 ---
 
 ## User Stories
