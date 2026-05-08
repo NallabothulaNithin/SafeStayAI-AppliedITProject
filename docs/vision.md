@@ -79,7 +79,7 @@ _Due: Session 5 — 05 May_
 
 **Problem/Gap:** Many students and immigrants cannot easily identify fake apartment listings. Existing rental websites mainly display listings and do not provide fraud analysis or scam warnings before users make payments.
 
-**Resolution:** SafeStay AI helps Yousuf detect suspicious listings before sending money. The system marks the apartment as "High Risk" and explains the reasons behind the prediction. Rahul avoids the scam and continues searchimg for safer housing options.
+**Resolution:** SafeStay AI helps Yousuf detect suspicious listings before sending money. The system marks the apartment as "High Risk" and explains the reasons behind the prediction. Yousuf avoids the scam and continues searchimg for safer housing options.
 
 ---
 ## User Stories
