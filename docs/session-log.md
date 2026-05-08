@@ -80,3 +80,18 @@
 - Finalized  personas and user stories.
 - Gained better understanding of other team projects 
 - Enhanced clarity on project presentation and planning.
+
+# Tuesday 07-05-2026
+## Nithin
+**What I Worked on:**
+- Learned about user stories in system design.
+- Discussed classmates projects and gathered recommendation for the SafeStay AI project.
+- Reviewed suggestions from different groups to improve project features.
+
+**What I Learned:**
+- Understood how user stories help explain user need and system functionality.
+- Learned the importance of collecting feedback and recommendation during project discussions.
+- Learned how additional features can improve user experience in accommodation platforms.
+
+**Blockers/Questions:**
+- Need to explore hoe AI can recommend suitable accommodation more accurately.
