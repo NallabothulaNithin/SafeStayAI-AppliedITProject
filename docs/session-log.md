@@ -95,3 +95,38 @@
 
 **Blockers/Questions:**
 - Need to explore hoe AI can recommend suitable accommodation more accurately.
+
+# Tuesday 12-05-2026
+## Nithin
+**What I Worked on:**
+- Installed VM VirtualBox successfully.
+- Installed Linux operating system in the virtual machine.
+- Started setting up the environment for upcoming tasks.
+
+**What I Learned:**
+- Learned how to create and configure a virtual machine.
+- Understood the Linux installation processinside VirtualBox.
+- Learned the basics of preparing a development environment.
+
+**Blockers/Questions:**
+- Need to configure SSH, FTP, and SCP in the next step.
+- Need to understand web server installation and deplyment process.
+
+
+# Tuesday 19-05-2026
+## Nithin
+**What I Worked on:**
+- Configured SSH, FTP, and SCP in the Linux virtual machine.
+- Installed and configured a web server.
+- Deployed a static website on the server.
+- Cloned and synchronized the GitHub repository.
+
+**What I Learned:**
+- Learned how SSH and SCP enable secure remote access and file transfer.
+- Understood the process of installing and configuring a web server.
+- Learned how static website deployment works.
+- Gained hands-on experience with GitHub repository cloning and updates.
+
+**Blockers/Questions:**
+- Faced some issues while transferring files using SCP and configuring paths.
+- Need more practice with Linux commands and server configuration.
