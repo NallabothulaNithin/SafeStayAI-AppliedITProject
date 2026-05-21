@@ -130,3 +130,21 @@
 **Blockers/Questions:**
 - Faced some issues while transferring files using SCP and configuring paths.
 - Need more practice with Linux commands and server configuration.
+
+# Thursday 21-05-2026
+## Nithin
+**What I Worked on:**
+- Configured SSH, FTP, and SCP in the Linux virtual machine.
+- Installed and configured a web server.
+- Deployed a static website on the server.
+- Cloned and synchronized the GitHub repository.
+
+**What I Learned:**
+- Learned how SSH and SCP enable secure remote access and file transfer.
+- Understood the process of installing and configuring a web server.
+- Learned how static website deployment works.
+- Gained hands-on experience with GitHub repository cloning and updates.
+
+**Blockers/Questions:**
+- Faced some issues while transferring files using SCP and configuring paths.
+- Need more practice with Linux commands and server configuration.
