@@ -134,17 +134,19 @@
 # Thursday 21-05-2026
 ## Nithin
 **What I Worked on:**
-- Configured SSH, FTP, and SCP in the Linux virtual machine.
-- Installed and configured a web server.
-- Deployed a static website on the server.
-- Cloned and synchronized the GitHub repository.
+- Installed and explored Docker and Docker Compose.
+- ⁠Pulled and ran a containerized web server using Nginx.
+- Used bind mounts to share files between host and container.
+- Worked with Docker volumes for live development workflows.
+- ⁠Managed container setup using Docker Compose.
+
 
 **What I Learned:**
-- Learned how SSH and SCP enable secure remote access and file transfer.
-- Understood the process of installing and configuring a web server.
-- Learned how static website deployment works.
-- Gained hands-on experience with GitHub repository cloning and updates.
+- ⁠Learned how Docker containers simplify application deployment.
+- ⁠Understood how Nginx can run inside a containerized environment.
+- ⁠Learned the use of bind mounts and volumes for file sharing and live updates.
+- ⁠Gained hands-on experience with Docker Compose for managing services.
 
 **Blockers/Questions:**
-- Faced some issues while transferring files using SCP and configuring paths.
-- Need more practice with Linux commands and server configuration.
+- ⁠Faced some confusion while configuring Docker containers and volume mappings.
+- ⁠Need more practice with Docker commands and Docker Compose workflows.
