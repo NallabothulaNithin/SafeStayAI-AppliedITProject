@@ -68,7 +68,7 @@
 **Blockers/Questions:**
 - Need more practice in creating detailed user scenarios.
 
-# Tuesday 07-05-2026
+# Thursday07-05-2026
 ## Eshwar yadav
 **What I worked on:**
 -- Worked on the documentation and planning phase of the **Safe Stay AI** project.
@@ -81,7 +81,7 @@
 - Gained better understanding of other team projects 
 - Enhanced clarity on project presentation and planning.
 
-# Tuesday 07-05-2026
+# Thursday 07-05-2026
 ## Nithin
 **What I Worked on:**
 - Learned about user stories in system design.
