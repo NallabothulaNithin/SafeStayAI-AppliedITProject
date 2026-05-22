@@ -68,7 +68,7 @@
 **Blockers/Questions:**
 - Need more practice in creating detailed user scenarios.
 
-# Tuesday 07-05-2026
+# Thursday07-05-2026
 ## Eshwar yadav
 **What I worked on:**
 -- Worked on the documentation and planning phase of the **Safe Stay AI** project.
@@ -80,3 +80,148 @@
 - Finalized  personas and user stories.
 - Gained better understanding of other team projects 
 - Enhanced clarity on project presentation and planning.
+
+# Thursday 07-05-2026
+## Nithin
+**What I Worked on:**
+- Learned about user stories in system design.
+- Discussed classmates projects and gathered recommendation for the SafeStay AI project.
+- Reviewed suggestions from different groups to improve project features.
+
+**What I Learned:**
+- Understood how user stories help explain user need and system functionality.
+- Learned the importance of collecting feedback and recommendation during project discussions.
+- Learned how additional features can improve user experience in accommodation platforms.
+
+**Blockers/Questions:**
+- Need to explore hoe AI can recommend suitable accommodation more accurately.
+
+# Tuesday 12-05-2026
+## Nithin
+**What I Worked on:**
+- Installed VM VirtualBox successfully.
+- Installed Linux operating system in the virtual machine.
+- Started setting up the environment for upcoming tasks.
+
+**What I Learned:**
+- Learned how to create and configure a virtual machine.
+- Understood the Linux installation processinside VirtualBox.
+- Learned the basics of preparing a development environment.
+
+**Blockers/Questions:**
+- Need to configure SSH, FTP, and SCP in the next step.
+- Need to understand web server installation and deplyment process.
+
+
+# Tuesday 19-05-2026
+## Nithin
+**What I Worked on:**
+- Configured SSH, FTP, and SCP in the Linux virtual machine.
+- Installed and configured a web server.
+- Deployed a static website on the server.
+- Cloned and synchronized the GitHub repository.
+
+**What I Learned:**
+- Learned how SSH and SCP enable secure remote access and file transfer.
+- Understood the process of installing and configuring a web server.
+- Learned how static website deployment works.
+- Gained hands-on experience with GitHub repository cloning and updates.
+
+**Blockers/Questions:**
+- Faced some issues while transferring files using SCP and configuring paths.
+- Need more practice with Linux commands and server configuration.
+
+# Thursday 21-05-2026
+## Nithin
+**What I Worked on:**
+- Installed and explored Docker and Docker Compose.
+- ⁠Pulled and ran a containerized web server using Nginx.
+- Used bind mounts to share files between host and container.
+- Worked with Docker volumes for live development workflows.
+- ⁠Managed container setup using Docker Compose.
+
+
+**What I Learned:**
+- ⁠Learned how Docker containers simplify application deployment.
+- ⁠Understood how Nginx can run inside a containerized environment.
+- ⁠Learned the use of bind mounts and volumes for file sharing and live updates.
+- ⁠Gained hands-on experience with Docker Compose for managing services.
+
+**Blockers/Questions:**
+- ⁠Faced some confusion while configuring Docker containers and volume mappings.
+- ⁠Need more practice with Docker commands and Docker Compose workflows.
+
+# Tuesday 12-05-2026
+## Eshwar Yadav
+**What I Worked on:**
+
+- Successfully installed Oracle VM VirtualBox.
+- Installed the Linux operating system inside the virtual machine.
+- Began configuring the environment for upcoming development tasks.
+
+**What I Learned:**
+
+- Learned how to create and configure a virtual machine using VirtualBox.
+- Understood the step-by-step Linux installation process within a virtual environment.
+- Learned the fundamentals of setting up a development environment.
+
+**Blockers/Questions:**
+
+- Need to configure SSH, FTP, and SCP services in the next phase.
+- Need to understand the process of web server installation and deployment.
+
+
+# Tuesday 19-05-2026
+## Eshwar Yadav
+
+**What I Worked on:**
+
+- Set up SSH, FTP, and SCP in the Linux virtual machine.
+- Installed and set up a web server.
+- Uploaded and hosted a static website on the server.
+- Cloned and updated the GitHub repository.
+
+**What I Learned:**
+
+- Learned how SSH and SCP are used for secure remote access and file transfer.
+- Understood how to install and set up a web server.
+- Learned the basics of static website hosting.
+- Got hands-on practice with cloning and updating a GitHub repository.
+
+**Blockers/Questions:**
+
+- Faced some problems while transferring files using SCP and setting file paths.
+- Need more practice with Linux commands and server setup.
+
+# Thrusday 21-05-2026
+## Eshwar Yadav
+**What I Worked On:**
+- Installed and explored Docker and Docker Compose.
+- Pulled and deployed an Nginx web server container.
+- Configured bind mounts to share files between the host system and containers.
+- Worked with Docker volumes for live development and persistent storage.
+- Managed multi-container configurations using Docker Compose.
+**What I Learned:**
+- Understood how Docker containers simplify application deployment and environment management.
+- Learned how Nginx operates inside a containerized setup.
+- Gained knowledge of bind mounts and Docker volumes for file synchronization and live updates.
+- Developed hands-on experience with Docker Compose for managing containerized services.
+**Container Startup Logs Observed:**
+- Docker entrypoint scripts executed successfully.
+- IPv6 listening was enabled in Nginx configuration.
+- Nginx configuration completed successfully.
+- Nginx server started using the epoll event method.
+- Multiple worker processes were initialized.
+- HTTP requests to localhost:8080 were successfully served with status 200 OK.
+**Blockers / Questions:**
+- Faced difficulties while configuring Docker containers and setting up correct volume mappings.
+- Need additional practice with Docker commands, container management, and Docker Compose workflows.
+- Docker could not find the nginx:alpine image locally and downloaded it automatically from Docker Hub.
+- Volume mapping and container configuration caused some confusion during setup.
+- Nginx generated a favicon-related error:
+  open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory)
+
+**Outcome:**
+- Successfully deployed and accessed an Nginx web server inside a Docker container.
+- Understood the basics of container networking, bind mounts, and Docker Compose workflows.
+- Gained practical exposure to Docker logs and debugging containerized applications.  

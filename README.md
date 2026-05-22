@@ -1,6 +1,10 @@
 Safe Stay AI
 
+<<<<<<< HEAD
 SafeStay AI is an AI-powered rental fraud detection system designed for students, immigrants, and apartment seekers to identify suspicious housing listings and avoid online rental scams.
+=======
+> SafeStay AI is an AI-powered rental fraud detection system designed for students, immigrants, and apartment seekers to identify suspicious housing listings and avoid online rental scams.
+>>>>>>> 052787d211a8d007bc4dcec31ab6a78b6ad243ff
 
 ## Team
 
@@ -9,7 +13,12 @@ SafeStay AI is an AI-powered rental fraud detection system designed for students
 | Product Owner | Nithin |
 | Scrum Master | Madhav |
 | Developer | Eshwar yadav jakkula |
+<<<<<<< HEAD
 
+=======
+| Developer | |
+| Developer | |
+>>>>>>> 052787d211a8d007bc4dcec31ab6a78b6ad243ff
 
 ## Project Overview
 
