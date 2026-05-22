@@ -45,7 +45,6 @@
 - Learned how to merge the branch to main.
 - Discussed about Personas.
 
-# Tuesday 05-05-2026
 ## Eshwar yadav
 **What I worked on:**
 - Worked on GitHub Repository.
@@ -55,7 +54,6 @@
 -learned how to create scenarios.
 - Discussed about Personas.
 
-# Tuesday 05-05-2026
 ## Nithin
 **What I Worked on:**
 - Learned about user personas and scenarios in system design.
@@ -81,7 +79,6 @@
 - Gained better understanding of other team projects 
 - Enhanced clarity on project presentation and planning.
 
-# Thursday 07-05-2026
 ## Nithin
 **What I Worked on:**
 - Learned about user stories in system design.
@@ -145,7 +142,22 @@ Gained deeper insights into other team projects and their workflows.
 - Understood the process of installing Linux within VirtualBox.
 - Learned the fundamental steps involved in setting up a development environment.
 
+## Eshwar Yadav
+**What I Worked on:**
 
+- Successfully installed Oracle VM VirtualBox.
+- Installed the Linux operating system inside the virtual machine.
+- Began configuring the environment for upcoming development tasks.
+
+**What I Learned:**
+
+- Learned how to create and configure a virtual machine using VirtualBox.
+- Understood the step-by-step Linux installation process within a virtual environment.
+
+**Blockers/Questions:**
+
+- Need to configure SSH, FTP, and SCP services in the next phase.
+- Need to understand the process of web server installation and deployment.
 
 
 # Tuesday 19-05-2026
@@ -166,47 +178,19 @@ Gained deeper insights into other team projects and their workflows.
 - Faced some issues while transferring files using SCP and configuring paths.
 - Need more practice with Linux commands and server configuration.
 
-# Thursday 21-05-2026
-## Nithin
+## Madhav
 **What I Worked on:**
-- Installed and explored Docker and Docker Compose.
-- ⁠Pulled and ran a containerized web server using Nginx.
-- Used bind mounts to share files between host and container.
-- Worked with Docker volumes for live development workflows.
-- ⁠Managed container setup using Docker Compose.
-
+- Set up and configured SSH, FTP, and SCP services on the Linux virtual machine.
+- Installed and configured the web server successfully.
+- Hosted a static website on the server environment.
+- Performed cloning and synchronization of the GitHub repository.
 
 **What I Learned:**
-- ⁠Learned how Docker containers simplify application deployment.
-- ⁠Understood how Nginx can run inside a containerized environment.
-- ⁠Learned the use of bind mounts and volumes for file sharing and live updates.
-- ⁠Gained hands-on experience with Docker Compose for managing services.
+- Learned how SSH and SCP provide secure remote access and file transfer capabilities.
+- Understood the steps involved in installing and configuring a web server.
+- Gained knowledge of the static website deployment process.
+- mAcquired practical experience in cloning, managing, and updating GitHub repositories.
 
-**Blockers/Questions:**
-- ⁠Faced some confusion while configuring Docker containers and volume mappings.
-- ⁠Need more practice with Docker commands and Docker Compose workflows.
-
-# Tuesday 12-05-2026
-## Eshwar Yadav
-**What I Worked on:**
-
-- Successfully installed Oracle VM VirtualBox.
-- Installed the Linux operating system inside the virtual machine.
-- Began configuring the environment for upcoming development tasks.
-
-**What I Learned:**
-
-- Learned how to create and configure a virtual machine using VirtualBox.
-- Understood the step-by-step Linux installation process within a virtual environment.
-- Learned the fundamentals of setting up a development environment.
-
-**Blockers/Questions:**
-
-- Need to configure SSH, FTP, and SCP services in the next phase.
-- Need to understand the process of web server installation and deployment.
-
-
-# Tuesday 19-05-2026
 ## Eshwar Yadav
 
 **What I Worked on:**
@@ -228,7 +212,28 @@ Gained deeper insights into other team projects and their workflows.
 - Faced some problems while transferring files using SCP and setting file paths.
 - Need more practice with Linux commands and server setup.
 
-# Thrusday 21-05-2026
+# Thursday 21-05-2026
+## Nithin
+**What I Worked on:**
+- Installed and explored Docker and Docker Compose.
+- ⁠Pulled and ran a containerized web server using Nginx.
+- Used bind mounts to share files between host and container.
+- Worked with Docker volumes for live development workflows.
+- ⁠Managed container setup using Docker Compose.
+
+
+**What I Learned:**
+- ⁠Learned how Docker containers simplify application deployment.
+- ⁠Understood how Nginx can run inside a containerized environment.
+- ⁠Learned the use of bind mounts and volumes for file sharing and live updates.
+- ⁠Gained hands-on experience with Docker Compose for managing services.
+
+**Blockers/Questions:**
+- ⁠Faced some confusion while configuring Docker containers and volume mappings.
+- ⁠Need more practice with Docker commands and Docker Compose workflows.
+- Learned the fundamentals of setting up a development environment.
+
+
 ## Eshwar Yadav
 **What I Worked On:**
 - Installed and explored Docker and Docker Compose.
