@@ -241,11 +241,13 @@ Gained deeper insights into other team projects and their workflows.
 - Configured bind mounts to share files between the host system and containers.
 - Worked with Docker volumes for live development and persistent storage.
 - Managed multi-container configurations using Docker Compose.
+
 **What I Learned:**
 - Understood how Docker containers simplify application deployment and environment management.
 - Learned how Nginx operates inside a containerized setup.
 - Gained knowledge of bind mounts and Docker volumes for file synchronization and live updates.
 - Developed hands-on experience with Docker Compose for managing containerized services.
+
 **Container Startup Logs Observed:**
 - Docker entrypoint scripts executed successfully.
 - IPv6 listening was enabled in Nginx configuration.
@@ -253,6 +255,7 @@ Gained deeper insights into other team projects and their workflows.
 - Nginx server started using the epoll event method.
 - Multiple worker processes were initialized.
 - HTTP requests to localhost:8080 were successfully served with status 200 OK.
+
 **Blockers / Questions:**
 - Faced difficulties while configuring Docker containers and setting up correct volume mappings.
 - Need additional practice with Docker commands, container management, and Docker Compose workflows.
@@ -264,4 +267,26 @@ Gained deeper insights into other team projects and their workflows.
 **Outcome:**
 - Successfully deployed and accessed an Nginx web server inside a Docker container.
 - Understood the basics of container networking, bind mounts, and Docker Compose workflows.
-- Gained practical exposure to Docker logs and debugging containerized applications.  
+- Gained practical exposure to Docker logs and debugging containerized applications.
+
+## Madhav
+**What I Worked On:**
+- Installed and explored the functionalities of Docker and Docker Compose.
+- Pulled and deployed a containerized Nginx web server successfully.
+- Utilized bind mounts to enable file sharing between the host system and containers.
+- Worked with Docker volumes to support live development and persistent data storage.
+- Managed and organized container configurations using Docker Compose.
+
+**What I Learned:**
+- Learned how Docker containers streamline and simplify application deployment.
+- Understood how Nginx operates within a containerized environment.
+- Gained knowledge of using bind mounts and volumes for file sharing and real-time updates.
+- Acquired practical experience in managing services using Docker Compose.
+
+**Blockers / Questions:**
+- Encountered challenges while configuring Docker containers and correctly setting up volume mappings.
+- Identified the need for further practice with Docker commands, container management, and Docker Compose workflows.
+- Observed Docker automatically pulling the nginx:alpine image from Docker Hub when it was not available locally.
+- Experienced initial confusion while working with volume configurations and container setup.
+- Noted a minor Nginx issue related to a missing favicon.ico file during deployment.
+- Strengthened understanding of basic development environment setup through hands-on practice.
