@@ -96,6 +96,28 @@
 **Blockers/Questions:**
 - Need to explore hoe AI can recommend suitable accommodation more accurately.
 
+## Madhav
+**What I Worked on:**
+- Developed a clearer understanding of how user stories represent user needs and system functionality.
+- Recognized the importance of gathering feedback and recommendations during project discussions.
+- Learned how adding extra features can enhance user experience in accommodation platforms.
+- Improved the quality and structure of project documentation.
+Successfully finalized personas and user stories for the project.
+- Gained broader insights into other team projects and their implementation approaches.
+- Enhanced understanding of effective project presentation, planning, and coordination.
+
+**What I Learned:**
+- Enhanced the quality and organization of project documentation.
+- Completed the development of personas and user stories.
+Gained deeper insights into other team projects and their workflows.
+- Improved understanding of project presentation techniques and planning strategies.
+- Learned how user stories effectively describe user needs and system functionality.
+- Understood the value of collecting feedback and recommendations during project discussions.
+- Explored how additional features can enhance the user experience in accommodation platforms.
+
+
+
+
 # Tuesday 12-05-2026
 ## Nithin
 **What I Worked on:**
@@ -111,6 +133,19 @@
 **Blockers/Questions:**
 - Need to configure SSH, FTP, and SCP in the next step.
 - Need to understand web server installation and deplyment process.
+
+## Madhav
+**What I Worked on:**
+- Successfully installed Oracle VM VirtualBox.
+- Installed and configured the Linux operating system on the virtual machine.
+- Began preparing the development environment for upcoming tasks and activities.
+
+**What I Learned:**
+- Gained knowledge on creating and configuring a virtual machine.
+- Understood the process of installing Linux within VirtualBox.
+- Learned the fundamental steps involved in setting up a development environment.
+
+
 
 
 # Tuesday 19-05-2026
