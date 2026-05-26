@@ -290,3 +290,30 @@ Gained deeper insights into other team projects and their workflows.
 - Experienced initial confusion while working with volume configurations and container setup.
 - Noted a minor Nginx issue related to a missing favicon.ico file during deployment.
 - Strengthened understanding of basic development environment setup through hands-on practice.
+
+
+# Tuesday 26-05-2026
+## Eshwar Yadav
+**Objective:**
+
+To present the concept and working idea of SafeStayAI, an AI-powered platform designed to help users identify whether house rent and security deposits are fair within different cities and areas in Germany.
+**Activities Performed:**
+Introduced the current housing challenges faced by students and newcomers in Germany.
+Explained how rental scams and overpriced deposits affect international students and working professionals.
+Presented the core idea of SafeStayAI and its purpose.
+Demonstrated the planned workflow of the system:
+User enters house details such as location, rent, and deposit.
+AI compares the data with average regional housing prices.
+System predicts whether the rent/deposit is fair, overpriced, or suspicious.
+Discussed possible technologies and AI integration for price analysis.
+Presented the proposed system architecture and user interface design.
+Explained future improvements such as scam detection, user reviews, and real-time housing market analysis.
+Answered questions from the professor and classmates regarding accuracy, data sources, and implementation feasibility.
+
+**What I Learned:**
+Learned how AI can be applied to solve real-world housing problems.
+Improved presentation and teamwork skills.
+Understood the importance of system architecture and user-centered design.
+Gained experience in explaining technical concepts clearly to an audience.
+Learned how to answer project-related technical and practical questions confidently.
+
