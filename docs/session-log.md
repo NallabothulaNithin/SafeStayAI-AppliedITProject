@@ -298,22 +298,53 @@ Gained deeper insights into other team projects and their workflows.
 
 To present the concept and working idea of SafeStayAI, an AI-powered platform designed to help users identify whether house rent and security deposits are fair within different cities and areas in Germany.
 **Activities Performed:**
-Introduced the current housing challenges faced by students and newcomers in Germany.
-Explained how rental scams and overpriced deposits affect international students and working professionals.
-Presented the core idea of SafeStayAI and its purpose.
-Demonstrated the planned workflow of the system:
-User enters house details such as location, rent, and deposit.
-AI compares the data with average regional housing prices.
-System predicts whether the rent/deposit is fair, overpriced, or suspicious.
-Discussed possible technologies and AI integration for price analysis.
-Presented the proposed system architecture and user interface design.
-Explained future improvements such as scam detection, user reviews, and real-time housing market analysis.
-Answered questions from the professor and classmates regarding accuracy, data sources, and implementation feasibility.
+- Introduced the current housing challenges faced by students and newcomers in Germany.
+- Explained how rental scams and overpriced deposits affect international students and working professionals.
+- Presented the core idea of SafeStayAI and its purpose.
+- Demonstrated the planned workflow of the system:
+- User enters house details such as location, rent, and deposit.
+- AI compares the data with average regional housing prices.
+- System predicts whether the rent/deposit is fair, overpriced, or suspicious.
+- Discussed possible technologies and AI integration for price analysis.
+- Presented the proposed system architecture and user interface design.
+- Explained future improvements such as scam detection, user reviews, and real-time housing market analysis.
+- Answered questions from the professor and classmates regarding accuracy, data sources, and implementation feasibility.
 
 **What I Learned:**
-Learned how AI can be applied to solve real-world housing problems.
-Improved presentation and teamwork skills.
-Understood the importance of system architecture and user-centered design.
-Gained experience in explaining technical concepts clearly to an audience.
-Learned how to answer project-related technical and practical questions confidently.
+- Learned how AI can be applied to solve real-world housing problems.
+- Improved presentation and teamwork skills.
+- Understood the importance of system architecture and user-centered design.
+- Gained experience in explaining technical concepts clearly to an audience.
+- Learned how to answer project-related technical and practical questions confidently.
 
+**EcoConnect Project Presentation Observation:**
+**Overview**
+
+Today, I attended and observed my friend’s project presentation on EcoConnect, a community-driven platform designed to connect people with local environmental volunteering events and sustainability activities.
+
+The project focused on solving a common issue where many students, professionals, and local residents are interested in contributing to environmental causes but often struggle to find nearby volunteering opportunities in a simple and reliable way.
+
+**Key Points Presented:**
+- The team explained the importance of sustainability and community participation in environmental activities.
+- They discussed the main problem that existing platforms are often outdated, difficult to use, or lack proper event details such as schedules, locations, and participation requirements.
+- EcoConnect was introduced as a user-friendly platform where people can:
+- Discover nearby eco-friendly volunteering events.
+- View event information and schedules.
+- Register for participation.
+- Connect with organizers and volunteers.
+**The presenters explained the workflow and future features of the platform, including:**
+- Location-based event recommendations.
+- Notifications and reminders.
+- Community engagement features.
+They also presented the interface design and explained how the platform encourages environmental awareness and social contribution.
+
+**What I Found Interesting:**
+- I found the project very interesting because it combines technology with environmental sustainability.
+- The idea of helping communities connect through volunteering events was practical and socially beneficial.
+- I liked the concept of location-based event discovery, which makes it easier for users to participate in nearby activities.
+- The project showed how simple digital solutions can encourage more people to contribute to environmental causes.
+**What I Learned:**
+- Learned how technology platforms can support sustainability initiatives.
+- Understood the importance of designing user-friendly community applications.
+- Observed effective presentation techniques and project explanation methods.
+- Gained ideas about developing socially impactful and community-focused applications.
