@@ -348,3 +348,26 @@ They also presented the interface design and explained how the platform encourag
 - Understood the importance of designing user-friendly community applications.
 - Observed effective presentation techniques and project explanation methods.
 - Gained ideas about developing socially impactful and community-focused applications.
+
+## Nithin
+
+**Objective:**
+To present the concept and working idea of SafeStayAI and explain how AI can help users identify fair, overpriced, or suspicious housing rents and deposits.
+
+**Activities Performed:**
+- Explained how rental scams and high security deposits affect international students and professionals.
+- Presented the core idea and purpose of SafeStayAI.
+- Explained the project prototype and demonstrated the overall user flow and interface design.
+- Presented the progress completed in Sprint 1, including problem statement, personas, scenarios, dataset collection, and initial project planning.
+- Participated in discussions and answered project-related questions.
+
+**What I Learned:**
+- Learned how AI can be applied to solve real-world housing and scam-related problems.
+- Understood the importance of system architecture and user-centered application design.
+- Learned how AI models analyze data and identify suspicious patterns.
+- Improved presentation, communication, and teamwork skills.
+- Gained experience in explaining technical concepts clearly and confidently.
+- Learned how to answer project-related technical and implementation questions effectively.
+
+**What I Found Interesting:**
+I found it interesting to observe other teams’ innovative project ideas and how AI can solve different real-world problems. The AI Outfit Finder project was interesting because it uses AI to provide personalized fashion recommendations based on user preferences and trends. The International Student Assistant project was also interesting because it focuses on helping international students with academics, accommodation guidance, and daily support. Seeing different AI applications gave me ideas about how technology can improve user experiences across multiple domains.
