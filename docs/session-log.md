@@ -371,3 +371,6 @@ To present the concept and working idea of SafeStayAI and explain how AI can hel
 
 **What I Found Interesting:**
 I found it interesting to observe other teams’ innovative project ideas and how AI can solve different real-world problems. The AI Outfit Finder project was interesting because it uses AI to provide personalized fashion recommendations based on user preferences and trends. The International Student Assistant project was also interesting because it focuses on helping international students with academics, accommodation guidance, and daily support. Seeing different AI applications gave me ideas about how technology can improve user experiences across multiple domains.
+
+
+# Thursday 28-05-2026
