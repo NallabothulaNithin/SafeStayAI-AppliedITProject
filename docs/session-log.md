@@ -371,3 +371,34 @@ To present the concept and working idea of SafeStayAI and explain how AI can hel
 
 **What I Found Interesting:**
 I found it interesting to observe other teams’ innovative project ideas and how AI can solve different real-world problems. The AI Outfit Finder project was interesting because it uses AI to provide personalized fashion recommendations based on user preferences and trends. The International Student Assistant project was also interesting because it focuses on helping international students with academics, accommodation guidance, and daily support. Seeing different AI applications gave me ideas about how technology can improve user experiences across multiple domains.
+
+# Tuesday 02-06-2026
+## Nithin
+
+**What I Worked On:**
+
+- Built a FastAPI application using the MVC architecture pattern.
+- Created Pydantic schemas for task data validation.
+- Implemented controller routes using FastAPI APIRouter.
+- Added service-layer business logic in TaskService.
+- Implemented CRUD operations (Create, Read, Delete) for tasks.
+- Tested API endpoints using Swagger UI (/docs).
+- Extended the React frontend to consume FastAPI endpoints.
+- Added task creation and deletion functionality in the frontend.
+- Connected the frontend API layer (api.js) with the backend services.
+
+**What I Learned:**
+
+- Learned how MVC separates controllers, services, and models.
+- Understood how FastAPI uses APIRouter for handling HTTP requests.
+- Learned how Pydantic validates request and response data.
+- Gained experience implementing CRUD APIs in FastAPI.
+- Learned how React components interact with backend APIs using fetch.
+- Understood the importance of keeping business logic inside the service layer.
+
+**Blockers/Questions:**
+
+- Faced issues with virtual environment configuration and Uvicorn installation.
+- Encountered React import/export errors while connecting the API layer.
+- Had to troubleshoot incorrect API endpoint paths causing 404 errors.
+- Need more practice with React state management and API integration.
