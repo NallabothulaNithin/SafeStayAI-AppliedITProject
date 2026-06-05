@@ -402,3 +402,62 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 - Encountered React import/export errors while connecting the API layer.
 - Had to troubleshoot incorrect API endpoint paths causing 404 errors.
 - Need more practice with React state management and API integration.
+
+## Eshwar Yadav
+
+**What I Worked On:**
+
+- Developed a FastAPI application following the MVC (Model-View-Controller) architecture.
+- Designed and implemented Pydantic schemas for request and response validation.
+- Created API routes using FastAPI's APIRouter.
+- Implemented business logic within the service layer using TaskService.
+- Developed CRUD functionalities, including task creation, retrieval, and deletion.
+- Tested and validated API endpoints using Swagger UI (/docs).
+- Integrated the React frontend with FastAPI backend services.
+- Added task creation and deletion features to the frontend application.
+- Connected the frontend API layer (api.js) to backend endpoints for seamless data communication.
+
+**What I Learned:**
+
+- Gained a solid understanding of the MVC architecture and the separation of concerns between controllers, services, and models.
+- Learned how FastAPI's APIRouter simplifies the organization and handling of HTTP requests.
+- Developed an understanding of data validation using Pydantic schemas for requests and responses.
+- Acquired hands-on experience in designing and implementing CRUD APIs with FastAPI.
+- Learned how React components communicate with backend services through API calls using fetch.
+- Understood the significance of maintaining business logic within the service layer to improve code maintainability and scalability.
+
+**Blockers/Questions:**
+
+- Faced challenges while setting up the virtual environment and configuring Uvicorn for the FastAPI application.
+- Resolved React import and export issues encountered during frontend-backend integration.
+- Troubleshot API routing problems caused by incorrect endpoint paths that resulted in 404 errors.
+- Identified the need for further practice in React state management and effective API integration techniques.
+
+
+
+# Thursday 04-06-2026
+## Eshwar Yadav
+
+**What I Worked On:**
+
+- Developed a Task Manager application using FastAPI and React following the MVC architecture pattern.
+- Implemented CRUD operations for tasks, including task creation, retrieval, and deletion.
+- Created API routes using FastAPI APIRouter and added business logic through the service layer.
+- Connected the React frontend with the FastAPI backend by integrating API calls and updating the user interface to support task management features.
+- Tested backend endpoints using Swagger UI and verified frontend-backend communication.
+
+**What I Learned:**
+
+- Learned how the MVC architecture separates responsibilities between controllers, services, and models, making applications easier to       maintain.
+- Gained practical experience using Pydantic schemas for request and response validation in FastAPI.
+- Improved my understanding of creating and testing RESTful APIs using FastAPI and Swagger UI.
+- Learned how React components interact with backend services through API calls and how frontend actions trigger backend operations.
+- Understood the importance of organizing business logic within the service layer to improve code structure and scalability.
+
+**Blockers/Questions:**
+
+- Faced issues with Docker Desktop and backend service connectivity during application setup and execution.
+- Encountered React import/export errors and component integration issues while implementing frontend functionality.
+- Experienced API routing and endpoint configuration problems that resulted in request failures and 404 errors.
+- Required additional troubleshooting to ensure proper communication between the React frontend and FastAPI backend.
+- Need more practice with React state management, API integration, and debugging full-stack application issues.
