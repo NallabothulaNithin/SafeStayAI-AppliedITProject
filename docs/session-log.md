@@ -83,7 +83,7 @@ What is the correct workflow for safely merging local branch changes back into m
 **Blockers/Questions:**
 - Need more practice in creating detailed user scenarios.
 
-##om
+## om
 **Tasks Completed:**
  Developed target user personas and drafted corresponding user scenarios to map out product interactions.
 
@@ -136,7 +136,7 @@ Gained deeper insights into other team projects and their workflows.
 - Understood the value of collecting feedback and recommendations during project discussions.
 - Explored how additional features can enhance the user experience in accommodation platforms.
 
-##om
+## om
 **Tasks Completed:**
  Pushed the finalized user personas and scenarios to GitHub, attended the team's daily Scrum meeting, and swapped project feedback with neighboring development teams.
 
@@ -191,7 +191,7 @@ Gained deeper insights into other team projects and their workflows.
 - Need to configure SSH, FTP, and SCP services in the next phase.
 - Need to understand the process of web server installation and deployment.
 
-##om
+## om
 **Tasks Completed:**
  Downloaded Ubuntu Server and successfully configured it as a virtual machine within VirtualBox.
 
@@ -253,7 +253,7 @@ Gained deeper insights into other team projects and their workflows.
 - Need more practice with Linux commands and server setup.
 
 
-##om
+## om
 **Tasks Completed:**
  Provisioned the Ubuntu VM with Git and Nginx. Successfully cloned the project repository onto the server and handled file transfers between the host machine and the server.
 
@@ -342,7 +342,7 @@ Gained deeper insights into other team projects and their workflows.
 - Noted a minor Nginx issue related to a missing favicon.ico file during deployment.
 - Strengthened understanding of basic development environment setup through hands-on practice.
 
-##om
+## om
 **Tasks Completed:**
  Set up Docker and Docker Compose environments, containerized Nginx, and collaborated on our upcoming project presentation slides.
 
@@ -437,7 +437,7 @@ To present the concept and working idea of SafeStayAI and explain how AI can hel
 **What I Found Interesting:**
 I found it interesting to observe other teams’ innovative project ideas and how AI can solve different real-world problems. The AI Outfit Finder project was interesting because it uses AI to provide personalized fashion recommendations based on user preferences and trends. The International Student Assistant project was also interesting because it focuses on helping international students with academics, accommodation guidance, and daily support. Seeing different AI applications gave me ideas about how technology can improve user experiences across multiple domains.
 
-##om
+## om
 **Tasks Completed:**
  Delivered the mid-term project presentation to the class.
 
