@@ -252,6 +252,15 @@ Gained deeper insights into other team projects and their workflows.
 - Faced some problems while transferring files using SCP and setting file paths.
 - Need more practice with Linux commands and server setup.
 
+
+##om
+**Tasks Completed:**
+ Provisioned the Ubuntu VM with Git and Nginx. Successfully cloned the project repository onto the server and handled file transfers between the host machine and the server.
+
+**Key Takeaways:**
+ Learned how to leverage scp and FileZilla for seamless file transfers, and researched the leading local server and hosting infrastructure providers in both Germany and India.
+
+
 # Thursday 21-05-2026
 ## Nithin
 **What I Worked on:**
