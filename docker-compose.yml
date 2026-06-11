@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  service-a:
+    build:
+      context: ./services/service-a
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    restart: unless-stopped
+  service-b:
+    build:
+      context: ./services/service-b
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    restart: unless-stopped
