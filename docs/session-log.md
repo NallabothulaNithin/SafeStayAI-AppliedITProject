@@ -136,7 +136,15 @@ Gained deeper insights into other team projects and their workflows.
 - Understood the value of collecting feedback and recommendations during project discussions.
 - Explored how additional features can enhance the user experience in accommodation platforms.
 
+##om
+**Tasks Completed:**
+ Pushed the finalized user personas and scenarios to GitHub, attended the team's daily Scrum meeting, and swapped project feedback with neighboring development teams.
 
+**Key Takeaways:**
+ Value of Personas & Scenarios: Creating these artifacts was crucial; they grounded our design choices in reality, ensuring the platform effectively tackles genuine user pain points.
+
+**Challenging Assumptions:**
+ The workshop shifted my mindset. I initially assumed most job-seekers face identical hurdles, but building detailed scenarios proved that individual challenges vary significantly, requiring a highly adaptable platform.
 
 
 # Tuesday 12-05-2026
