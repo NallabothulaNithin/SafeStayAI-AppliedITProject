@@ -83,6 +83,13 @@ What is the correct workflow for safely merging local branch changes back into m
 **Blockers/Questions:**
 - Need more practice in creating detailed user scenarios.
 
+##om
+**Tasks Completed:**
+ Developed target user personas and drafted corresponding user scenarios to map out product interactions.
+
+**Key Takeaways:**
+ Realized the depth of planning required to truly step into the users' shoes and design from their perspective.
+
 # Thursday07-05-2026
 ## Eshwar yadav
 **What I worked on:**
