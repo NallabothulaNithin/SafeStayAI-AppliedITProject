@@ -26,6 +26,17 @@
 **Blockers / Questions:**
 -  Need to understand more about Deployment.
 
+## Om
+**Tasks Completed:** 
+Initialized the project repository and transitioned from the main branch to a dedicated working sub-branch.
+
+**Key Takeaways:** 
+Mastered using git checkout -b (or git switch -c) to simultaneously create and switch to a new branch. Discovered that direct pushes to the main branch are restricted to protect codebase stability.
+
+**Open Questions:** 
+What is the correct workflow for safely merging local branch changes back into main?
+
+
 # Thursday 30-04-2026
 #Eshwar yadav
 ** What I worked on:**
