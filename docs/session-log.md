@@ -508,6 +508,14 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 - Identified the need for further practice in React state management and effective API integration techniques.
 
 
+## om
+**Tasks Completed:**
+ Expanded the MVC setup to integrate the frontend with the backend, completing project exercises up to task 4. Built a functional React CRUD interface backed by custom FastAPI endpoints to fetch and display live server data.
+
+**Key Takeaways:**
+ Consolidated my understanding of Python-based API design and end-to-end full-stack integration.
+
+
 
 # Thursday 04-06-2026
 ## Eshwar Yadav
