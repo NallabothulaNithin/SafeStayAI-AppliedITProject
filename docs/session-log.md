@@ -45,6 +45,12 @@ What is the correct workflow for safely merging local branch changes back into m
 ** What I learned:**
 - I learned how to create a branch, update, clone, merge and create a pullrequest.
 
+## om
+**Tasks Completed:**
+ Participated in a collaborative team session focused on clarifying the overall project vision, selecting our primary tech stack, and allocating core tasks. Began early structural work on the UI framework.
+
+**Key Takeaways:**
+ Discovered several specialized platforms for UI/UX design inspiration and gained a clearer understanding of the end-to-end software development lifecycle.
 
 # Tuesday 05-05-2026
 ## Madhav
