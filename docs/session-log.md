@@ -444,10 +444,7 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 **Key Takeaways:**
  Learned strategies for highlighting our unique value proposition to make the application stand out from existing market competitors.
 
-Thursday, May 28, 2026
-Tasks Completed: Structured the backend following the Model-View-Controller (MVC) architectural pattern, completing the first two development tasks. Successfully launched the backend server locally and verified data transmission.
 
-Key Takeaways: Deepened my Python proficiency and learned how to initialize and configure a REST API using FastAPI.
 
 # Tuesday 02-06-2026
 ## Nithin
