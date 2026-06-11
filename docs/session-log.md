@@ -437,6 +437,18 @@ To present the concept and working idea of SafeStayAI and explain how AI can hel
 **What I Found Interesting:**
 I found it interesting to observe other teams’ innovative project ideas and how AI can solve different real-world problems. The AI Outfit Finder project was interesting because it uses AI to provide personalized fashion recommendations based on user preferences and trends. The International Student Assistant project was also interesting because it focuses on helping international students with academics, accommodation guidance, and daily support. Seeing different AI applications gave me ideas about how technology can improve user experiences across multiple domains.
 
+##om
+**Tasks Completed:**
+ Delivered the mid-term project presentation to the class.
+
+**Key Takeaways:**
+ Learned strategies for highlighting our unique value proposition to make the application stand out from existing market competitors.
+
+Thursday, May 28, 2026
+Tasks Completed: Structured the backend following the Model-View-Controller (MVC) architectural pattern, completing the first two development tasks. Successfully launched the backend server locally and verified data transmission.
+
+Key Takeaways: Deepened my Python proficiency and learned how to initialize and configure a REST API using FastAPI.
+
 # Tuesday 02-06-2026
 ## Nithin
 
