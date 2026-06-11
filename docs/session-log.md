@@ -318,6 +318,8 @@ Gained deeper insights into other team projects and their workflows.
 - Understood the basics of container networking, bind mounts, and Docker Compose workflows.
 - Gained practical exposure to Docker logs and debugging containerized applications.
 
+
+
 ## Madhav
 **What I Worked On:**
 - Installed and explored the functionalities of Docker and Docker Compose.
@@ -340,6 +342,20 @@ Gained deeper insights into other team projects and their workflows.
 - Noted a minor Nginx issue related to a missing favicon.ico file during deployment.
 - Strengthened understanding of basic development environment setup through hands-on practice.
 
+##om
+**Tasks Completed:**
+ Set up Docker and Docker Compose environments, containerized Nginx, and collaborated on our upcoming project presentation slides.
+
+**Key Takeaways:**
+ Learned to orchestrate containers via Docker Compose and configure local directory volumes to reflect code updates on the live site instantly.
+
+Plaintext
+[Container Logs: mysite]
+mysite  | /docker-entrypoint.sh: Configuration complete; ready for start up
+mysite  | [notice] using the "epoll" event method
+mysite  | [notice] nginx/1.31.0 built by gcc 15.2.0 (Alpine)
+mysite  | [notice] OS: Linux 6.10.14-linuxkit
+mysite  | [notice] start worker processes (30, 31, 32, 33)
 
 # Tuesday 26-05-2026
 ## Eshwar Yadav
