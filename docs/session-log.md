@@ -191,6 +191,14 @@ Gained deeper insights into other team projects and their workflows.
 - Need to configure SSH, FTP, and SCP services in the next phase.
 - Need to understand the process of web server installation and deployment.
 
+##om
+**Tasks Completed:**
+ Downloaded Ubuntu Server and successfully configured it as a virtual machine within VirtualBox.
+
+**Key Takeaways:**
+ Gained foundational knowledge regarding different architectural patterns used in modern software systems.
+
+
 
 # Tuesday 19-05-2026
 ## Nithin
