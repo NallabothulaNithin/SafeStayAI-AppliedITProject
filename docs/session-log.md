@@ -543,3 +543,36 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 - Experienced API routing and endpoint configuration problems that resulted in request failures and 404 errors.
 - Required additional troubleshooting to ensure proper communication between the React frontend and FastAPI backend.
 - Need more practice with React state management, API integration, and debugging full-stack application issues.
+
+## om
+**Architecture & API Development:**
+ Built a full-stack Task Manager application leveraging FastAPI and React, adhering strictly to the MVC (Model-View-Controller) architectural pattern.
+
+**Backend Engineering:** Maintained a clean separation of concerns by routing endpoints through FastAPI's APIRouter and isolating core business logic within a dedicated service layer.
+
+**Full-Stack Integration:**
+ Implemented complete end-to-end CRUD functionality (Create, Read, Update, Delete) for tasks. Successfully wired the React frontend to trigger these backend operations and update the user interface dynamically.
+
+**Testing & Verification:**
+ Utilized Swagger UI to perform functional testing on backend endpoints and verified seamless cross-origin data communication between the frontend and backend.
+
+**What I Learned**
+Design Patterns: Gained a deep understanding of how the MVC pattern enhances codebase scalability and maintainability by decoupling database models, business logic (services), and route controllers.
+
+**Data Validation:**
+ Acquired practical experience utilizing Pydantic schemas to enforce strict type checking and request/response validation within FastAPI.
+
+**Asynchronous Full-Stack Workflows:**
+ Mastered how React components lifecycle methods and event handlers interact with asynchronous API calls to update application state based on server responses.
+
+**Blockers & Open Challenges:**
+Containerization & Networking: Encountered connectivity hurdles between local backend services when managing application state within Docker Desktop.
+
+**Frontend Architecture:**
+ Dealt with minor React compilation bottlenecks, specifically around component integration and explicit default vs. named import/export paths.
+
+**Network Routing:**
+ Troubleshot endpoint configuration mismatches that initially triggered 404 Not Found errors during early frontend-to-backend communication tests.
+
+**Next Steps / Focus Areas**
+Focus on deeper mastery of advanced React state management patterns.
