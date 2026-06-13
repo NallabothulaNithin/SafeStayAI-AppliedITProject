@@ -576,3 +576,52 @@ Containerization & Networking: Encountered connectivity hurdles between local ba
 
 **Next Steps / Focus Areas**
 Focus on deeper mastery of advanced React state management patterns.
+
+
+
+# Tuesday 09-06-2026
+## Eshwar Yadav
+
+**What I Worked on**
+
+- Configured PostgreSQL,backend, and frontend services in docker-compose.yml.
+- Added SQLAlchemy, Psycopg, and Alemboc dependencies to the backend.
+- Built and started the Docker continers.
+- Created and tested a temporary / db-ping endpoint to verify database connectivity.
+
+**What I Learned**
+- How Docker Compose manages multiple services and service dependencies.
+- How FasAPI connects to PostgreSQL using SQLAlchemy and a database URL.
+- The purpose of Docker health checks and container networking.
+- How to execute a simple database query using SQLAlchemy.
+
+**Blockers/Questions**
+
+- Needed to understand the PostgreSQL connection string structure.
+- Clarified why the hostname is db instead of localhost in Docker.
+- Verified that the database health check completes before backend startup.
+- No major blockers encountered after successful container deployment.
+
+# Tuesday 11-06-2026
+## Eshwar Yadav
+
+**What I worked on**
+
+- Converted the application from in-memory storage to SQLAlchemy ORM with PostgreSQL.
+- Created database configuration, ORM models, repositories, services, and controller updates.
+- Implemented CRUD operations using SQLAlchemy sessions and repository pattern.
+- Tested task creation, listing, and deletion through the existing React fronted.
+
+**What I learned**
+
+- How SQLAlchemy models map python classes to database tables.
+- How repositories separate database access logic from business logic.
+- How FastAPI dependency injection manages database sessions and services.
+- How Pydantic schemas work with ORM objects using from_attributes=True.
+
+**Blockers/Questions**
+
+- Understanding the flow between Controller -> Service -> Repository -> Database.
+- Clarify when to use Session, select(), commit(), and refresh().
+- Ensuring database sessions are properly opened and closed per request.
+- Verifying that task data persists after restarting backend containers.
