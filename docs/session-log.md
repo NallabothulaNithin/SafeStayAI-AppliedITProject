@@ -602,6 +602,14 @@ Focus on deeper mastery of advanced React state management patterns.
 - Verified that the database health check completes before backend startup.
 - No major blockers encountered after successful container deployment.
 
+##om
+**Tasks Completed:**
+ Completed the first practical exercise in the Object-Relational Mapping (ORM) lab.
+
+**Key Takeaways:**
+ Learned how ORM frameworks bridge the gap between object-oriented code and relational databases, eliminating the need to write raw SQL.
+
+
 # Thursday 11-06-2026
 ## Eshwar Yadav
 
