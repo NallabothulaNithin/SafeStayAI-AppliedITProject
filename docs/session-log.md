@@ -602,7 +602,7 @@ Focus on deeper mastery of advanced React state management patterns.
 - Verified that the database health check completes before backend startup.
 - No major blockers encountered after successful container deployment.
 
-##om
+## om
 **Tasks Completed:**
  Completed the first practical exercise in the Object-Relational Mapping (ORM) lab.
 
