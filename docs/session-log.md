@@ -633,3 +633,10 @@ Focus on deeper mastery of advanced React state management patterns.
 - Clarify when to use Session, select(), commit(), and refresh().
 - Ensuring database sessions are properly opened and closed per request.
 - Verifying that task data persists after restarting backend containers.
+
+## om
+**Tasks Completed:**
+ Wrapped up the second practical milestone in the ORM lab series.
+
+**Key Takeaways:**
+ Gained hands-on experience mapping advanced database relationships and manipulating data directly through code models.
