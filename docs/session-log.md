@@ -640,3 +640,33 @@ Focus on deeper mastery of advanced React state management patterns.
 
 **Key Takeaways:**
  Gained hands-on experience mapping advanced database relationships and manipulating data directly through code models.
+
+# Tuesday 16-06-2026
+## Nithin
+**What I worked on**
+
+- ⁠Worked on the MVC Lab Task Management application.
+- ⁠Integrated the React frontend with the FastAPI backend.
+- ⁠Added user-task association functionality.
+- ⁠Implemented API calls to fetch users and tasks.
+- Updated the frontend to display task owners.
+- Tested backend endpoints using Swagger UI and browser requests.
+- Debugged frontend rendering issues and API integration problems.
+- Investigated task creation failures and user ID validation errors.
+
+**What I learned**
+
+- How React components communicate with FastAPI APIs.
+- Using ⁠ useEffect() ⁠ and ⁠ Promise.all() ⁠ to load multiple datasets.
+- Converting API responses into lookup objects using ⁠ Object.fromEntries() ⁠.
+- ⁠Understanding CORS-related errors and backend response handling.
+- How FastAPI validates request payloads and raises custom exceptions.
+- The relationship between Controller → Service → Repository → Database layers in an MVC architecture.
+- Debugging frontend and backend issues using browser DevTools and Docker logs.
+
+**Blockers/Questions**
+
+- ⁠Clarify best practices for handling user selection in React forms.
+- ⁠Better understanding of FastAPI exception handling and validation.
+- Need more practice with state management when working with related entities (Users and Tasks).
+- Verify persistence of task data after restarting containers and services.
