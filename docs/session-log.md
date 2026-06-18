@@ -544,6 +544,27 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 - Required additional troubleshooting to ensure proper communication between the React frontend and FastAPI backend.
 - Need more practice with React state management, API integration, and debugging full-stack application issues.
 
+## Nithin
+
+**What I Worked On:**
+- Developed the Task Manager application using FastAPI and React following the MVC architecture.
+- Implemented CRUD operations for task creation, retrieval, updating, and deletion.
+- Created API routes using FastAPI APIRouter and connected them to the service layer.
+- Integrated the React frontend with backend APIs for task management functionality.
+- Tested API endpoints using Swagger UI and verified frontend-backend communication.
+
+**What I Learned:**
+- Learned how the MVC architecture separates controllers, services, and models.
+- Gained practical experience with FastAPI routing and API development.
+- Improved understanding of React component interaction with backend services.
+- Learned how to use Pydantic schemas for request and response validation.
+- Understood the importance of service-layer business logic for maintainable applications.
+
+**Blockers/Questions:**
+- Faced Docker Desktop configuration and backend connectivity issues.
+- Encountered React import/export and component integration errors.
+
+
 ## om
 **Architecture & API Development:**
  Built a full-stack Task Manager application leveraging FastAPI and React, adhering strictly to the MVC (Model-View-Controller) architectural pattern.
@@ -609,6 +630,24 @@ Focus on deeper mastery of advanced React state management patterns.
 **Key Takeaways:**
  Learned how ORM frameworks bridge the gap between object-oriented code and relational databases, eliminating the need to write raw SQL.
 
+## Nithin
+**What I Worked On:**
+- Configured PostgreSQL, backend, and frontend services using Docker Compose.
+- Added SQLAlchemy, Psycopg, and Alembic dependencies to the FastAPI backend.
+- Built and started Docker containers for the application environment.
+- Created and tested a database connection endpoint to verify PostgreSQL connectivity.
+- Implemented initial ORM setup and tested database interactions.
+
+**What I Learned:**
+- Learned how Docker Compose manages multiple services and their dependencies.
+- Understood how FastAPI connects to PostgreSQL using SQLAlchemy.
+- Learned the purpose of Docker health checks and container networking.
+- Gained practical experience creating database models with SQLAlchemy ORM.
+- Understood how ORM simplifies database operations without writing raw SQL queries.
+
+**Blockers/Questions:**
+- Needed to understand the PostgreSQL connection string format.
+- Faced confusion regarding the use of service names instead of localhost in Docker networking.
 
 # Thursday 11-06-2026
 ## Eshwar Yadav
@@ -640,6 +679,23 @@ Focus on deeper mastery of advanced React state management patterns.
 
 **Key Takeaways:**
  Gained hands-on experience mapping advanced database relationships and manipulating data directly through code models.
+
+ ## Nithin
+
+ **What I Worked On:**
+- Migrated the application from in-memory storage to PostgreSQL using SQLAlchemy ORM.
+- Created database configurations, ORM models, repositories, services, and controller layers.
+- Implemented CRUD operations using SQLAlchemy sessions and the repository pattern.
+- Integrated database operations with existing FastAPI endpoints.
+- Tested task creation, retrieval, updating, and deletion through the React frontend.
+
+**What I Learned:**
+- Learned how SQLAlchemy models map Python classes to database tables.
+- Understood how the repository pattern separates database access logic from business logic.
+- Gained experience with FastAPI dependency injection for database sessions and services.
+- Learned how Pydantic schemas interact with ORM objects using from_attributes=True.
+- Improved understanding of structured backend architecture using Controller → Service → Repository → Database layers.
+
 
 # Tuesday 16-06-2026
 ## Nithin
