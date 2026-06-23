@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.controllers.task_controller  import router as task_router
 from app.controllers.user_controller import router as user_router
 from sqlalchemy import create_engine, text
+from app.auth.hashing import hash_password
 
 from sqlalchemy import select
 from app.database import SessionLocal
@@ -20,6 +21,7 @@ Base.metadata.create_all(bind=engine)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -40,7 +42,11 @@ def seed_users():
     with SessionLocal() as db:
         if db.scalars(select(User)).first() is not None:
             return
-        db.add_all([User(name="John Doe"), User(name="Nithin")])
+        
+        db.add_all([
+            User(name="John Doe", password_hash=hash_password("password123")), 
+            User(name="Nithin", password_hash=hash_password("password123"))
+        ])
         db.commit()
 
 seed_users()        
