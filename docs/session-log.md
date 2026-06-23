@@ -726,3 +726,26 @@ Focus on deeper mastery of advanced React state management patterns.
 - ⁠Better understanding of FastAPI exception handling and validation.
 - Need more practice with state management when working with related entities (Users and Tasks).
 - Verify persistence of task data after restarting containers and services.
+
+## om
+**Updates:**
+
+**MVC Task App:**
+ Fully integrated the React frontend with the FastAPI backend, enabling user-task associations and updating the UI to display task owners.
+
+**Testing & Debugging:**
+ Resolved frontend rendering bugs, fixed task creation failures by troubleshooting user ID validation errors, and verified endpoints via Swagger UI and Docker logs.
+
+**Key Takeaways:**
+
+Practiced handling full MVC data flow (Controller → Service → Repository → DB).
+
+Optimized frontend data loading using useEffect(), Promise.all(), and Object.fromEntries() for efficient lookups.
+
+Navigated FastAPI payload validation and CORS error handling.
+
+**Next Steps / Blockers:**
+
+Need to review best practices for React form state and managing related entities (Users/Tasks).
+
+Want to double-check data persistence settings across Docker container restarts.
