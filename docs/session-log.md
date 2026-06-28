@@ -748,4 +748,4 @@ Navigated FastAPI payload validation and CORS error handling.
 
 Need to review best practices for React form state and managing related entities (Users/Tasks).
 
-Want to double-check data persistence settings across Docker container restarts...
+Want to double-check data persistence settings across Docker container restarts.
