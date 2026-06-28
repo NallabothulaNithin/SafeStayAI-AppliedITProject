@@ -749,3 +749,48 @@ Navigated FastAPI payload validation and CORS error handling.
 Need to review best practices for React form state and managing related entities (Users/Tasks).
 
 Want to double-check data persistence settings across Docker container restarts.
+
+# Thursday 18-06-2026
+## Eshwar Yadav
+**What I worked on**
+- Set up Alembic for database migrations.
+- Removed create_all() from the project.
+- Created and applied the initial migration.
+- Added a created_at column to the Task table.
+- Generated a new migration and tested upgrade and downgrade.
+- Checked the migration history.
+
+**What I Learned**
+- Alembic is used to manage database schema changes.
+- Migrations are better than using create-all().
+- Upgrade head applies the latest migration.
+- Downgrade rolls back the last migration.
+- Every database change should be tracked using migrations.
+
+**Blockers/Questions**
+- Needed help configuring Alembic correctly.
+- Verified the migration commands before aoolying them.
+- No major blockers after completing the migration steps.
+
+# Thursday 25-06-2026
+## Eshwar Yadav
+**What I worked on**
+- Added JWT authentication to the FastAPI backend.
+- Created register and login APIs.
+- Added JWT token generation and password verification.
+- Updated the user repository to support login and registration.
+- Connected the authentication routes to the application.
+- Updated the frontend to store and use the JWT token.
+
+**What I learned**
+- JWT is used to authenticate users securely.
+- Passwords should be stored as hashes, not plain text.
+- Login returns an access token after successful authentication.
+- Protected requests use the token in the Authorization header.
+- The frontend stores the token in local storage after login.
+
+**Blockers/Questions**
+- Faced import and dependency errors while setting up JWT.
+- Needed to install the required JWT and python-multipart packages.
+- Needed help fixing authentication controller and repository errors.
+- Verified the login and registration endpoints after resolving the issues.
