@@ -794,3 +794,25 @@ Want to double-check data persistence settings across Docker container restarts.
 - Needed to install the required JWT and python-multipart packages.
 - Needed help fixing authentication controller and repository errors.
 - Verified the login and registration endpoints after resolving the issues.
+
+# Tuesday 30-06-2026
+## Eshwar Yadav
+**What I worked on**
+- Added JWT authentication to protect API routes.
+- Created the get_current_user dependency.
+- Protected task routes so only logged-in users can access them.
+- Added the /auth/me/ endpoint to return the logged-in user's details.
+- Tested protected endpoints using JWT tokens.
+
+**What I learned**
+- Protected routes require a valid JWT token.
+- get_current_user verifies the token and returns the logged-in user.
+- Unauthorrized users receive a 401 Unauthorized response.
+- The /auth/me endpoint returns the current authenticated user.
+- The frontend must send the JWT token in the Authorization header.
+
+**Blockers/Questions**
+- Needed help understanding how get_current_user works.
+- Verified how JWT tokens are validated for protected routes.
+- Tested API responses for valid and invalid tokens.
+- No major blockers after successfully protecting the routes.
