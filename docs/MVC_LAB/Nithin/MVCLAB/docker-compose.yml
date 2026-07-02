@@ -17,6 +17,10 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
+  # fastapi_backend:
+  #   build: ./backend
+  #   env_file:
+  #     - .env        
   backend:
     build: ./backend
     container_name: fastapi_backend
@@ -25,7 +29,10 @@ services:
     volumes:
       - ./backend:/app
     environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      JWT_SECRET: change-me-in-production
+      JWT_ALGORITHM: ${JWT_ALGORITHM}
+      JWT_EXPIRATION_MINUTES: ${JWT_EXPIRATION_MINUTES}
     depends_on:
       db:
         condition: service_healthy

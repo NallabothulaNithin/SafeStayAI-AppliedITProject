@@ -12,10 +12,17 @@ import os
 
 from app.database import Base, engine
 from app import models
+from app.controllers.auth_controller import router as auth_router
 
 app = FastAPI(title="MVCLAB backend API")
 
 Base.metadata.create_all(bind=engine)
+
+app.include_router(
+    auth_router,
+    prefix="/api/auth",
+    tags=["Authentication"]
+)
 
 # the view runs on a different origin, so CROS is required
 app.add_middleware(

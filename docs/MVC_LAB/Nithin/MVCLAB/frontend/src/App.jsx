@@ -1,122 +1,142 @@
-import { useEffect, useState } from "react";
-import { fetchTasks, fetchUsers, createTask, deleteTask } from "./services/api";
-import styles from "./App.module.css";
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import {
+  isLoggedIn, login, logout,
+  fetchMe, fetchTasks, createTask, deleteTask,
+} from "./services/api";
+ 
+ 
+function LoginScreen({ onLogin }) {
+  const [name, setName]         = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError]       = useState(null);
+ 
+  async function handleSubmit(e) {
+    e.preventDefault();
+    try {
+      await login(name, password);
+      onLogin();
+    } catch (e) { setError(e.message); }
+  }
+ 
+  return (
+  <div className="loginBox">
+    <h1>Log in</h1>
 
-export default function App() {
+    <form onSubmit={handleSubmit} className="loginForm">
+      <input
+        className="input"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="Username"
+      />
+
+      <input
+        className="input"
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Password"
+      />
+
+      <button className="button" type="submit">
+        Log in
+      </button>
+    </form>
+
+    {error && <div className="error">{error}</div>}
+  </div>
+);
+}
+ 
+ 
+function TaskList() {
   const [tasks, setTasks] = useState([]);
+  const [me, setMe]       = useState(null);
   const [title, setTitle] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [busy, setBusy] = useState(false);
+  const [busy, setBusy]   = useState(false);
   const [error, setError] = useState(null);
-  const [users, setUsers] = useState([]);
-  const [selectedOwner, setSelectedOwner] = useState("");
-
+ 
   async function refresh() {
     try {
-      const data = await fetchTasks();
-      setTasks(data);
-      setError(null);
-    } catch (e) {
-      setError(e.message);
-    }
+      const [t, u] = await Promise.all([fetchTasks(), fetchMe()]);
+      setTasks(t); setMe(u); setError(null);
+    } catch (e) { setError(e.message); }
   }
-
-  useEffect(() => {
-    Promise.all([fetchTasks(), fetchUsers()])
-      .then(([tasksData, usersData]) => {
-        setTasks(tasksData);
-        setUsers(usersData);})
-        .finally(() => setLoading(false));
-      }, []);
-
+ 
+  useEffect(() => { refresh(); }, []);
+ 
   async function handleAdd(e) {
     e.preventDefault();
-    const t = title.trim();
-    if (!t) return;
-    if (!selectedOwner) {
-      setError("Please select a user");
-      return;
-    }
-    try {
-      await createTask(t, Number(selectedOwner));
-      setTitle("");
-      await refresh();
-    } catch (e) {
-      setError(e.message);
-    } finally {
-      setBusy(false);
-    }
+    if (!title.trim()) return;
+    setBusy(true);
+    try { await createTask(title.trim()); setTitle(""); await refresh(); }
+    catch (e) { setError(e.message); } finally { setBusy(false); }
   }
-
+ 
   async function handleDelete(id) {
     setBusy(true);
-    try {
-      await deleteTask(id);
-      await refresh();
-    } catch (e) {
-      setError(e.message);
-    } finally {
-      setBusy(false);
-    }
+    try { await deleteTask(id); await refresh(); }
+    catch (e) { setError(e.message); } finally { setBusy(false); }
   }
-  const usersById = Object.fromEntries(users.map((u) => [u.id, u]));
-
+ 
   return (
-    <div className={styles.wrap}>
-      <h1 className={styles.h1}>Tasks</h1>
+  <div className="container">
+    <div className="header">
+      <h1 className="title">Tasks</h1>
 
-      <form onSubmit={handleAdd} className={styles.form}>
-        <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          placeholder="New task title…"
-          className={styles.input}
-          disabled={busy}
-        />
-        <select
-          value={selectedOwner}
-          onChange={(e) => setSelectedOwner(e.target.value)}
+      {me && (
+        <div>
+          <span className="subtitle">Hi, {me.name}</span>{" "}
+          <button
+            className="logout"
+            onClick={() => {
+              logout();
+              window.location.reload();
+            }}
           >
-          <option value="">Select User</option>
-          {users.map((user) => (
-            <option key={user.id} value={user.id}>
-              {user.name}
-            </option>
-          ))}
-          </select>
-        <button
-          type="submit"
-          className={styles.btn}
-          disabled={busy || !title.trim()}
-        >
-          Add
-        </button>
-      </form>
-
-      {error && <div className={styles.error}>Error: {error}</div>}
-
-      {loading ? (
-        <div className={styles.muted}>Loading…</div>
-      ) : tasks.length === 0 ? (
-        <div className={styles.muted}>No tasks yet — add one above.</div>
-      ) : (
-        <ul className={styles.list}>
-          {tasks.map((t) => (
-            <li key={t.id} className={styles.item}>
-              <span>
-                <span className={styles.id}>#{t.id}</span> {t.title} {" - "} {usersById[t.owner_id]?.name}
-              </span>
-              <button
-                onClick={() => handleDelete(t.id)}
-                className={styles.del}
-                disabled={busy}
-              >
-                Delete
-              </button>
-            </li>
-          ))}
-        </ul>
+            Log out
+          </button>
+        </div>
       )}
     </div>
-  );
+
+    <form onSubmit={handleAdd} className="form">
+      <input
+        className="input"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="New task..."
+      />
+
+      <button className="button" type="submit">
+        Add
+      </button>
+    </form>
+
+    {error && <div className="error">{error}</div>}
+
+    <ul className="taskList">
+      {tasks.map((t) => (
+        <li key={t.id} className="taskItem">
+          {t.title}
+
+          <button
+            className="deleteBtn"
+            onClick={() => handleDelete(t.id)}
+          >
+            Delete
+          </button>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+} 
+ 
+export default function App() {
+  const [loggedIn, setLoggedIn] = useState(isLoggedIn());
+  return loggedIn
+    ? <TaskList />
+    : <LoginScreen onLogin={() => setLoggedIn(true)} />;
 }

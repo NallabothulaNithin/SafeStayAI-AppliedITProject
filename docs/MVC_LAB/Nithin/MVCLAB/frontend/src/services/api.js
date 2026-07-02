@@ -1,42 +1,84 @@
 const BASE = "http://localhost:8000";
-
-export async function fetchTasks(){
-    const res = await fetch(`${BASE}/api/tasks/`);
-    
-    if (!res.ok) throw new Error("Failed to load tasks");
-    return res.json();
+ 
+ 
+function authHeaders() {
+  const token = localStorage.getItem("token");
+  return token ? { Authorization: `Bearer ${token}` } : {};
 }
-
-export async function fetchUsers() {
-    const res = await fetch(`${BASE}/api/users/`);
-    
-    if (!res.ok) throw new Error("Failed to load users");
-    return res.json();
+ 
+ 
+export function isLoggedIn() {
+  return !!localStorage.getItem("token");
 }
-
-export async function createTask(title, owner_id) {
-  const res = await fetch(`${BASE}/api/tasks/`, {
+ 
+export function logout() {
+  localStorage.removeItem("token");
+}
+ 
+ 
+export async function login(name, password) {
+  const body = new URLSearchParams({ username: name, password });
+  const res = await fetch(`${BASE}/api/auth/login`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ title, owner_id }),
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body,
   });
-
-  if (!res.ok) {
-    const detail = await res.text();
-    throw new Error(`Create failed: ${res.status} ${detail}`);
+  if (!res.ok) throw new Error("Login failed");
+  const { access_token } = await res.json();
+  localStorage.setItem("token", access_token);
+}
+ 
+ 
+async function authedFetch(url, options = {}) {
+  const res = await fetch(url, {
+    ...options,
+    headers: {
+      "Content-Type": "application/json",
+      ...authHeaders(),
+      ...options.headers,
+    },
+  });
+  if (res.status === 401) {
+    logout();
+    window.location.reload();
+    throw new Error("Session expired");
   }
+  return res;
+}
+ 
+ 
+export async function fetchMe() {
+  const res = await authedFetch(`${BASE}/api/auth/me`);
+  if (!res.ok) throw new Error("Failed to load user");
   return res.json();
 }
-
-export async function deleteTask(id) {
-  const res = await fetch(`${BASE}/api/tasks/${id}`, {
-    method: "DELETE",
+ 
+export async function fetchTasks() {
+  const res = await authedFetch(`${BASE}/api/tasks/`);
+  if (!res.ok) throw new Error("Failed to load tasks");
+  return res.json();
+}
+ 
+export async function createTask(title) {
+  const res = await authedFetch(`${BASE}/api/tasks/`, {
+    method: "POST",
+    body: JSON.stringify({ title }),
   });
-
+  if (!res.ok) throw new Error(`Create failed: ${res.status}`);
+  return res.json();
+}
+ 
+export async function deleteTask(id) {
+  const res = await authedFetch(`${BASE}/api/tasks/${id}`, { method: "DELETE" });
   if (!res.ok) throw new Error("Delete failed");
 }
 
-// export async function fetchUsers() {
-//   const res = await fetch(`${BASE}/api/users/`);
-//   return res.json();
-// }
+export async function fetchUsers() {
+  const res = await authedFetch(`${BASE}/api/users/`, {
+    headers: authHeaders(),
+  });
+  if (!res.ok) {
+    throw new Error("Failed to load users");
+  }
+  return res.json();
+}
