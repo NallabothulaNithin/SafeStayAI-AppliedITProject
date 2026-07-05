@@ -773,6 +773,7 @@ Want to double-check data persistence settings across Docker container restarts.
 - No major blockers after completing the migration steps.
 
 ## Nithin
+
 **What I worked on:**
 - Fixed backend API issues and connected the frontend with the backend.
 - Added JWT authentication and implemented password hashing for user login.
@@ -780,12 +781,14 @@ Want to double-check data persistence settings across Docker container restarts.
 - Integrated the fraud detection API with the React frontend.
 - Fixed Git merge and push issues and updated the GitHub repository.
 - Tested the complete application flow from login to fraud prediction.
+
 **What I Learned:**
 - JWT is used to securely authenticate users without storing session data.
 - Passwords should always be hashed before storing them in the database.
 - Proper API routing and CORS configuration are essential for frontend-backend communication.
 - Debugging server logs helps identify backend issues quickly.
 - Regular Git commits and testing reduce integration problems.
+
 **Blockers/Questions:**
 - Faced issues configuring JWT authentication initially.
 
@@ -814,12 +817,14 @@ Want to double-check data persistence settings across Docker container restarts.
 - Updated the user repository to support authentication.
 - Connected authentication routes to the backend application.
 - Integrated the frontend to store and send the JWT token for protected requests.
+
 **What I Learned:**
 - JWT provides stateless and secure user authentication.
 - Passwords should always be hashed before being stored in the database.
 - Successful authentication returns an access token used for subsequent requests.
 - Protected API endpoints require the JWT token in the Authorization header.
 - The frontend can securely manage user sessions by storing the token and including it in API requests.
+
 **Blockers/Questions:**
 - Faced import and dependency issues while configuring JWT.
 - Installed required packages such as python-jose, passlib, bcrypt, and python-multipart.
@@ -853,6 +858,7 @@ Want to double-check data persistence settings across Docker container restarts.
 - No major blockers after successfully protecting the routes.
 
 ## Nithin
+
 **What I worked on:**
 - Added JWT authentication to secure protected API routes.
 - Implemented the get_current_user dependency for user authentication.
@@ -860,11 +866,13 @@ Want to double-check data persistence settings across Docker container restarts.
 - Created the /auth/me endpoint to return the currently authenticated user's information.
 - Tested protected endpoints using valid and invalid JWT tokens.
 - Integrated JWT-based authentication across the backend application.
+
 **What I Learned:**
 - Protected API routes require a valid JWT access token.
 - The get_current_user dependency validates the JWT token and retrieves the authenticated user.
 - Requests with invalid or expired tokens return a 401 Unauthorized response.
 - The /auth/me endpoint is useful for retrieving the current user's profile after login.
-- The frontend must include the JWT token in the Authorization: Bearer <token> header for authenticated requests.
+- The frontend must include the JWT token in the Authorization: Bearer "token" header for authenticated requests.
+
 **Blockers/Questions:**
 - Needed to understand how the get_current_user dependency validates JWT tokens.
