@@ -30,19 +30,52 @@
 
 
 from app.repositories.task_repositories import TaskRepository
+from app.repositories.user_repositories import UserRepository
+from app.models import Task, User
+
+
+
+class TaskNotFoundError(Exception):
+    pass
+class UserNotFoundError(Exception):
+    pass
+class NotAuthorizedError(Exception):
+    pass
 
 class TaskService:
-    def __init__(self, repo=None):
-        print("INIT CALLED")
-        self._repo = repo or TaskRepository()
+    def __init__(self, tasks, users):
+        # print("INIT CALLED")
+        # self._repo = repo or TaskRepository()
+        # self.get_tasks = tasks
+        # self._users = users
+        self._tasks = tasks
+        self._users = users
 
-    def list_tasks(self):
-        return self._repo.all()
+    def list_tasks(self, current_user: User):
+        return self._tasks.all_for_user(current_user.id)
 
-    def create_task(self, title):
-        return self._repo.add(title)
+    def create_task(self, title: str, current_user: User):
+        return self._tasks.add(title, current_user.id)
 
-    def delete_task(self, task_id):
-        return self._repo.remove(task_id)
+    def delete_task(self, task_id: int, current_user: User) -> None:
+        task = self._tasks.find(task_id)
+        if not task:
+            raise TaskNotFoundError(task_id)
+        if task.owner_id != current_user.id:
+            raise NotAuthorizedError()
+        self._tasks.remove(task_id)
 
+    def get_task(self, task_id: int, current_user: User):
+        task = self._repo.find(task_id)
+        if not task:
+            raise TaskNotFoundError(task_id)
+        return task
+    
+    
+
+
+
+
+    """ Strip title; raise ValueError if Empty.
+    Look up the user; raise UserNotFoundError if not found."""
 
