@@ -51,7 +51,7 @@ def seed_users():
             return
         
         db.add_all([
-            User(name="John Doe", password_hash=hash_password("password123")), 
+            User(name="Doe", password_hash=hash_password("password123")), 
             User(name="Nithin", password_hash=hash_password("password123"))
         ])
         db.commit()
