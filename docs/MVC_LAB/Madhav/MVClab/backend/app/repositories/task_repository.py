@@ -28,3 +28,6 @@ class TaskRepository:
         self._db.delete(task)
         self._db.commit()
         return True
+    
+    def all_for_user(self, owner_id: int) -> list[Task]:
+        return list(self._db.scalars(select(Task).where(Task.owner_id == owner_id)))
