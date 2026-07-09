@@ -50,11 +50,15 @@ class TaskService:
         # self._users = users
         self._tasks = tasks
         self._users = users
+        self._repo = tasks
 
     def list_tasks(self, current_user: User):
         return self._tasks.all_for_user(current_user.id)
 
     def create_task(self, title: str, current_user: User):
+        title = title.strip()
+        if not title:
+            raise ValueError("Title cannot be empty or whitespace")
         return self._tasks.add(title, current_user.id)
 
     def delete_task(self, task_id: int, current_user: User) -> None:
@@ -69,6 +73,8 @@ class TaskService:
         task = self._repo.find(task_id)
         if not task:
             raise TaskNotFoundError(task_id)
+        if task.owner_id != current_user.id:
+            raise NotAuthorizedError()
         return task
     
     

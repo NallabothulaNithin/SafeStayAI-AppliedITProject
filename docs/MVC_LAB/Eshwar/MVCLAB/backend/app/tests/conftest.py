@@ -33,16 +33,16 @@ def _seed_user(db, name: str) ->User:
 
 
 @pytest.fixture
-def Eshwaryadav(db_session):
+def eshwaryadav(db_session):
     return _seed_user(db_session, "Eshwaryadav")
 
 @pytest.fixture
-def Bob(db_session):
+def bob(db_session):
     return _seed_user(db_session, "Bob")
 
 @pytest.fixture
-def client(db_session, Eshwaryadav):
+def client(db_session, eshwaryadav):
     app.dependency_overrides[get_db] = lambda: db_session
-    app.dependency_overrides[get_current_user] = lambda: Eshwaryadav
+    app.dependency_overrides[get_current_user] = lambda: eshwaryadav
     yield TestClient(app)
     app.dependency_overrides.clear()

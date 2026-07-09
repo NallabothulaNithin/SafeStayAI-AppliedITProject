@@ -1,7 +1,7 @@
 from app.models import Task, User
 
 class FakeTaskRepository:
-    def __imit__(self):
+    def __init__(self):
         self._tasks: list[Task] = []
         self._next_id: int = 1
 
@@ -13,6 +13,7 @@ class FakeTaskRepository:
 
     def add(self, title: str, owner_id: int) -> Task:
         task = Task(id=self._next_id, title=title, owner_id=owner_id)
+        self._next_id += 1
         self._tasks.append(task)
         return task
 
