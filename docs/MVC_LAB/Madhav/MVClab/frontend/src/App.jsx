@@ -1,122 +1,108 @@
 import { useEffect, useState } from "react";
-import { fetchTasks, fetchUsers, createTask, deleteTask } from "./services/api";
-import styles from "./App.module.css";
+import {
+  isLoggedIn, login, logout,
+  fetchMe, fetchTasks, createTask, deleteTask,
+} from "./services/api";
  
-export default function App() {
+ 
+function LoginScreen({ onLogin }) {
+  const [name, setName]         = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError]       = useState(null);
+ 
+  async function handleSubmit(e) {
+    e.preventDefault();
+    try {
+      await login(name, password);
+      onLogin();
+    } catch (e) { setError(e.message); }
+  }
+ 
+  return (
+    <div style={{ maxWidth: 360, margin: "5rem auto", fontFamily: "system-ui" }}>
+      <h1>Log in</h1>
+      <form onSubmit={handleSubmit}
+            style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        <input value={name} onChange={e => setName(e.target.value)}
+               placeholder="username" autoFocus />
+        <input value={password} onChange={e => setPassword(e.target.value)}
+               type="password" placeholder="password" />
+        <button type="submit">Log in</button>
+      </form>
+      {error && <div style={{ color: "crimson", marginTop: 8 }}>{error}</div>}
+    </div>
+  );
+}
+ 
+ 
+function TaskList() {
   const [tasks, setTasks] = useState([]);
+  const [me, setMe]       = useState(null);
   const [title, setTitle] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [busy, setBusy] = useState(false);
+  const [busy, setBusy]   = useState(false);
   const [error, setError] = useState(null);
-  const [users, setUsers] = useState([]);
-  const [selectedOwner, setSelectedOwner] = useState("");
  
   async function refresh() {
     try {
-      const data = await fetchTasks();
-      setTasks(data);
-      setError(null);
-    } catch (e) {
-      setError(e.message);
-    }
+      const [t, u] = await Promise.all([fetchTasks(), fetchMe()]);
+      setTasks(t); setMe(u); setError(null);
+    } catch (e) { setError(e.message); }
   }
  
-  useEffect(() => {
-    Promise.all([fetchTasks(), fetchUsers()])
-      .then(([tasksData, usersData]) => {
-        setTasks(tasksData);
-        setUsers(usersData);})
-        .finally(() => setLoading(false));
-      }, []);
+  useEffect(() => { refresh(); }, []);
  
   async function handleAdd(e) {
     e.preventDefault();
-    const t = title.trim();
-    if (!t) return;
-    if (!selectedOwner) {
-      setError("Please select a user");
-      return;
-    }
-    try {
-      await createTask(t, Number(selectedOwner));
-      setTitle("");
-      await refresh();
-    } catch (e) {
-      setError(e.message);
-    } finally {
-      setBusy(false);
-    }
+    if (!title.trim()) return;
+    setBusy(true);
+    try { await createTask(title.trim()); setTitle(""); await refresh(); }
+    catch (e) { setError(e.message); } finally { setBusy(false); }
   }
  
   async function handleDelete(id) {
     setBusy(true);
-    try {
-      await deleteTask(id);
-      await refresh();
-    } catch (e) {
-      setError(e.message);
-    } finally {
-      setBusy(false);
-    }
+    try { await deleteTask(id); await refresh(); }
+    catch (e) { setError(e.message); } finally { setBusy(false); }
   }
-  const usersById = Object.fromEntries(users.map((u) => [u.id, u]));
  
   return (
-    <div className={styles.wrap}>
-      <h1 className={styles.h1}>Tasks</h1>
+    <div style={{ maxWidth: 520, margin: "2rem auto", fontFamily: "system-ui" }}>
+      <div style={{ display: "flex", justifyContent: "space-between",
+                    alignItems: "center" }}>
+        <h1>Tasks</h1>
+        {me && <div>
+          <span style={{ color: "#666" }}>Hi, {me.name}</span>{" "}
+          <button onClick={() => { logout(); window.location.reload(); }}>
+            Log out
+          </button>
+        </div>}
+      </div>
  
-      <form onSubmit={handleAdd} className={styles.form}>
-        <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          placeholder="New task title…"
-          className={styles.input}
-          disabled={busy}
-        />
-        <select
-          value={selectedOwner}
-          onChange={(e) => setSelectedOwner(e.target.value)}
-          >
-          <option value="">Select User</option>
-          {users.map((user) => (
-            <option key={user.id} value={user.id}>
-              {user.name}
-            </option>
-          ))}
-          </select>
-        <button
-          type="submit"
-          className={styles.btn}
-          disabled={busy || !title.trim()}
-        >
-          Add
-        </button>
+      <form onSubmit={handleAdd} style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+        <input value={title} onChange={e => setTitle(e.target.value)}
+               placeholder="New task…" disabled={busy} style={{ flex: 1 }} />
+        <button type="submit" disabled={busy || !title.trim()}>Add</button>
       </form>
  
-      {error && <div className={styles.error}>Error: {error}</div>}
+      {error && <div style={{ color: "crimson" }}>{error}</div>}
  
-      {loading ? (
-        <div className={styles.muted}>Loading…</div>
-      ) : tasks.length === 0 ? (
-        <div className={styles.muted}>No tasks yet — add one above.</div>
-      ) : (
-        <ul className={styles.list}>
-          {tasks.map((t) => (
-            <li key={t.id} className={styles.item}>
-              <span>
-                <span className={styles.id}>#{t.id}</span> {t.title} {" - "} {usersById[t.owner_id]?.name}
-              </span>
-              <button
-                onClick={() => handleDelete(t.id)}
-                className={styles.del}
-                disabled={busy}
-              >
-                Delete
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul style={{ listStyle: "none", padding: 0 }}>
+        {tasks.map(t => (
+          <li key={t.id} style={{ display: "flex", justifyContent: "space-between",
+                                  padding: "8px 0", borderBottom: "1px solid #eee" }}>
+            {t.title}
+            <button onClick={() => handleDelete(t.id)} disabled={busy}>Delete</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
+}
+ 
+ 
+export default function App() {
+  const [loggedIn, setLoggedIn] = useState(isLoggedIn());
+  return loggedIn
+    ? <TaskList />
+    : <LoginScreen onLogin={() => setLoggedIn(true)} />;
 }
