@@ -876,3 +876,72 @@ Want to double-check data persistence settings across Docker container restarts.
 
 **Blockers/Questions:**
 - Needed to understand how the get_current_user dependency validates JWT tokens.
+
+# Thursday 02-07-2026
+## Eshwar Yadav
+**What I worked on**
+- Implemented JWT authentication and protected API routes.
+- Added user login and token-based authorization.
+- Connected tasks with the logged-in user account.
+- Restricted users to access only their own tasks.
+- Updated frontend API calls with authentication tokens.
+- Tested login, task creation, deletion, and authorization.
+
+**What I learned**
+- Learned how JWT secures backend APIs.
+- Learned how FastAPI Depends() manages authentication.
+- Understood authentication vs authorization concepts.
+- Learned user-task database relationship handling.
+- Learned frontend and backend secure communication.
+- Learned handling 401 and 403 errors.
+
+**Questions/Blockers**
+- Faced issues while passing the current user into task services.
+- Fixed unauthorized errors while accessing protected routes.
+- Resolved JWT token handling issues between frontend and backend.
+- Need to explore refresh tokens for improving security.
+- Need to understand advanced role-based authorization.
+
+
+# Tuesday 07-07-2026
+## Eshwar Yadav
+
+**What I worked on**
+- Created backend testing environment using Pytest.
+- Configured in-memory SQLite database for isolated testing.
+- Added test fixtures for database sessions, users, and TestClient.
+- Created fake repositories to test without using the real database.
+- Implemented smoke tests to verify task ownership and authorization logic.
+- Ran automated tests to confirm the application works correctly.
+
+**What I Learned**
+- Learned how Pytest is used for automated backend testing.
+- Understood how fixtures create reusable test environments.
+- Learned how dependency overrides help test FastAPI applications.
+- Understood the use of fake repositories for unit testing.
+- Learned how to verify authentication and authorization behavior through tests.
+
+**Questions / Blockers**
+- Faced issues understanding the connection between fixtures and test cases.
+- Needed clarification on using fake repositories instead of real databases.
+- Need more practice writing advanced API and unit tests.
+
+
+# Thursday 09-07-2026
+## Eshwar Yadav
+**What I Worked On**
+- Created unit tests for TaskService using fake repositories.
+- Implemented integration tests using FastAPI TestClient for API endpoints.
+- Added authorization tests to control user access to tasks.
+- Tested task creation, retrieval, deletion, validation, and error handling.
+
+**What I Learned**
+- Learned the difference between unit testing, integration testing, and authorization testing.
+- Understood how fake repositories and TestClient help verify application behavior.
+- Learned how authentication and permissions protect user-specific data.
+- Improved knowledge of pytest, API responses, and exception handling.
+
+**Questions / Blockers**
+- Needed clarification on dependency overrides and test database sessions.
+- Faced challenges understanding authentication and authorization test flows.
+- Need more practice creating test scenarios and debugging failed test cases.
