@@ -45,34 +45,37 @@ function ListingForm() {
   return (
 
     <div>
-
+      <label>Listing Title</label>
       <input
         type="text"
         name="title"
-        placeholder="Title"
+        placeholder="Enter Listing Title"
         value={form.title}
         onChange={handleChange}
       />
 
+      <label>Monthly Rent</label>
       <input
         type="number"
         name="rent"
-        placeholder="Rent"
+        placeholder="Enter Monthly Rent"
         value={form.rent}
         onChange={handleChange}
       />
 
+      <label>Security Deposit</label>
       <input
         type="number"
         name="deposit"
-        placeholder="Deposit"
+        placeholder="Enter Security Deposit"
         value={form.deposit}
         onChange={handleChange}
       />
 
+      <label>Description</label>
       <textarea
         name="description"
-        placeholder="Description"
+        placeholder="Enter Description"
         value={form.description}
         onChange={handleChange}
       />
