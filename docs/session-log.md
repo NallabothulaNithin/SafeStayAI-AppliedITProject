@@ -437,10 +437,8 @@ To present the concept and working idea of SafeStayAI and explain how AI can hel
 **What I Found Interesting:**
 I found it interesting to observe other teams’ innovative project ideas and how AI can solve different real-world problems. The AI Outfit Finder project was interesting because it uses AI to provide personalized fashion recommendations based on user preferences and trends. The International Student Assistant project was also interesting because it focuses on helping international students with academics, accommodation guidance, and daily support. Seeing different AI applications gave me ideas about how technology can improve user experiences across multiple domains.
 
-<<<<<<< HEAD
 
 # Thursday 28-05-2026
-=======
 ## om
 **Tasks Completed:**
  Delivered the mid-term project presentation to the class.
@@ -948,5 +946,4 @@ Want to double-check data persistence settings across Docker container restarts.
 **Questions / Blockers**
 - Needed clarification on dependency overrides and test database sessions.
 - Faced challenges understanding authentication and authorization test flows.
-- Need more practice creating test scenarios and debugging failed test cases.
->>>>>>> ad48995ecbb96487fa1c396805accf8169bba253
+- Need more practice creating test scenarios and debugging failed test cases..
