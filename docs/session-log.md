@@ -946,4 +946,23 @@ Want to double-check data persistence settings across Docker container restarts.
 **Questions / Blockers**
 - Needed clarification on dependency overrides and test database sessions.
 - Faced challenges understanding authentication and authorization test flows.
-- Need more practice creating test scenarios and debugging failed test cases..
+- Need more practice creating test scenarios and debugging failed test cases.
+
+# Tuesday 14-07-2026
+## Eshwar Yadav
+**What I worked on**
+- Wrote the professor's quiz on software testing concepts.
+- Attended and listened to other teams' sprint presentations and project updates.
+- Reviewed different project implementation approaches presented by classmates.
+- Successfully pushed the MVCLAB project to the GitHub repository.
+
+**What I Learned**
+- Improved my understanding of software testing concepts through the quiz.
+- Learned how different teams planned and executed their sprint tasks.
+- Gained insights into various project development and presentation approaches.
+- Reinforced my knowledge of Git and the GitHub push workflow.
+
+**Questions / Blockers**
+- Need more practice with advanced software testing concepts for future quizzes.
+- Want to improve confidence in explaining project progress during sprint reviews.
+- Need to explore better Git workflows for handling branches and merge conflicts.
