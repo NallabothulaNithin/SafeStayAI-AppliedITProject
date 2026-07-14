@@ -904,6 +904,24 @@ Want to double-check data persistence settings across Docker container restarts.
 - Need to explore refresh tokens for improving security.
 - Need to understand advanced role-based authorization.
 
+## Nithin Nallabothula
+
+**What I Worked On**
+- Implemented JWT-based authentication to secure backend API endpoints.
+- Developed user login functionality with token-based authentication.
+- Linked task records to authenticated user accounts.
+- Configured authorization rules so users can access only their own tasks.
+- Updated frontend API requests to include JWT access tokens.
+- Tested login, task creation, task deletion, and protected route functionality.
+
+**What I Learned**
+- Learned how JWT authentication secures REST APIs.
+- Understood how FastAPI's dependency injection (Depends) is used for authentication.
+- Gained a clear understanding of the difference between authentication and authorization.
+- Learned how to manage user-task relationships in the database.
+- Improved knowledge of secure communication between the frontend and backend.
+- Learned how to troubleshoot authentication errors such as HTTP 401 (Unauthorized) and HTTP 403 (Forbidden).
+
 
 # Tuesday 07-07-2026
 ## Eshwar Yadav
@@ -928,6 +946,23 @@ Want to double-check data persistence settings across Docker container restarts.
 - Needed clarification on using fake repositories instead of real databases.
 - Need more practice writing advanced API and unit tests.
 
+
+## Nithin Nallabothula
+
+**What I Worked On**
+- Set up a backend testing environment using Pytest for automated testing.
+- Configured an in-memory SQLite database to isolate test execution.
+- Created reusable test fixtures for database sessions, authenticated users, and FastAPI TestClient.
+- Implemented fake repositories to test business logic without relying on the production database.
+- Developed smoke tests to verify task ownership and authorization functionality.
+- Executed automated test suites to validate application stability and backend functionality.
+
+**What I Learned**
+- Learned how Pytest is used to automate backend testing.
+- Understood the purpose of fixtures in creating reusable and maintainable test environments.
+- Gained experience using dependency overrides for testing FastAPI applications.
+- Learned how fake repositories improve unit testing by isolating business logic.
+- Improved understanding of validating authentication and authorization through automated tests.
 
 # Thursday 09-07-2026
 ## Eshwar Yadav
