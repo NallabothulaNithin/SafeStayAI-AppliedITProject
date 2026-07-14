@@ -36,13 +36,15 @@ def create_task(payload: TaskCreate, user: User = Depends(get_current_user),
         raise HTTPException(status_code=422, detail=str(exc))
  
 # GET /tasks/{task_id}
-@router.get("/{task_id}", response_model=Task)
+@router.get("/{task_id}")
 def get_task(task_id: int, user: User = Depends(get_current_user), 
              service: TaskService = Depends(get_task_service), current_user: User = Depends(get_current_user)) -> Task:
     try:
         return service.get_task(task_id, current_user)
     except TaskNotFoundError:
         raise HTTPException(status_code=404, detail="Task not found")
+    except NotAuthorizedError:
+        raise HTTPException(status_code=403, detail="Not authorized to access this task")
  
 # DELETE /tasks/{task_id}
 @router.delete("/{task_id}", status_code=204)
@@ -52,4 +54,6 @@ def delete_task(task_id: int, user: User = Depends(get_current_user),
         service.delete_task(task_id, current_user)
     except TaskNotFoundError:
         raise HTTPException(status_code=404, detail="Task not found")
+    except NotAuthorizedError:
+        raise HTTPException(status_code=403, detail="Not authorized to delete this task")
  

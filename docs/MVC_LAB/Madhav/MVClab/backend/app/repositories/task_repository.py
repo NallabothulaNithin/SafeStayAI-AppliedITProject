@@ -11,8 +11,12 @@ class TaskRepository:
     def all(self) -> list[Task]:
         return list(self._db.scalars(select(Task)))
     
-    def find(self, task_id: int) -> Task:
-        return self._db.get(Task, task_id)
+    def find(self, task_id: int):
+        return (
+            self._db.query(Task)
+            .filter(Task.id == task_id)
+            .first()
+        )
     
     def add(self, title: str, owner_id: int) -> Task:
         task = Task(title=title, owner_id=owner_id)
@@ -21,10 +25,10 @@ class TaskRepository:
         self._db.refresh(task)
         return task
     
-    def remove(self, task_id: int) -> bool:
+    def remove(self, task_id: int):
         task = self.find(task_id)
         if task is None:
-            return False
+            return None
         self._db.delete(task)
         self._db.commit()
         return True

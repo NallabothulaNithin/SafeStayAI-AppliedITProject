@@ -72,7 +72,7 @@ class TaskService:
         if task is None:
             raise TaskNotFoundError(task_id)
         if task.owner_id != current_user.id:
-            raise TaskNotFoundError(task_id)
+            raise NotAuthorizedError()
         return task
  
     def create_task(self, title: str, current_user: User):
@@ -85,8 +85,8 @@ class TaskService:
  
     def delete_task(self, task_id: int, current_user: User) -> None:
         task = self.get_task(task_id, current_user)
-        if task is None:
-            raise TaskNotFoundError(task_id)
-        if task.owner_id != current_user.id:
-            raise TaskNotFoundError(task_id)
+        # if task is None:
+        #     raise TaskNotFoundError(task_id)
+        # if task.owner_id != current_user.id:
+        #     raise NotAuthorizedError()
         return self._tasks.remove(task.id)

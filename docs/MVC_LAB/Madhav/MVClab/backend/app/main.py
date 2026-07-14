@@ -13,6 +13,7 @@ import os
 
 from app.database import Base, engine
 from app import models
+# from main import app
 
 app = FastAPI(title="MVC Task API")
 
