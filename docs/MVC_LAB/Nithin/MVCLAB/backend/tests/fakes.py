@@ -2,7 +2,7 @@ from app.models import User, Task
 
 class FakeTaskRepository:
     def __init__(self):
-        self.tasks = list[Task] =[]
+        self.tasks: list[Task] = []
         self.next_id = 1
 
     def all_for_user(self, owner_id: int) -> list[Task]:
