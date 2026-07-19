@@ -25,6 +25,7 @@ services:
       - ./backend:/app
     environment:
       DATABASE_URL: postgresql+psycopg://tasks_user:tasks_pw@db:5432/tasks
+      JWT_SECRET: change_me
     depends_on:
       db:
         condition: service_healthy
