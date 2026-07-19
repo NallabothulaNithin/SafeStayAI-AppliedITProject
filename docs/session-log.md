@@ -1065,6 +1065,31 @@ Still need to learn role-based permissions.
 - Learned how fake repositories improve unit testing by isolating business logic.
 - Improved understanding of validating authentication and authorization through automated tests.
 
+## om
+
+What I worked on
+
+Set up a backend testing environment with Pytest.
+Configured an in-memory SQLite database for isolated tests.
+Added test fixtures for database sessions, users, and the TestClient.
+Created fake repositories to test without touching the real database.
+Wrote smoke tests to check task ownership and permissions.
+Ran automated tests to confirm everything works.
+
+What I Learned
+
+How Pytest is used for automated backend testing.
+How fixtures create reusable test setups.
+How dependency overrides help test FastAPI apps.
+Why fake repositories are useful for unit testing.
+How to test authentication and authorization behavior.
+
+Questions/Blockers
+
+Had trouble understanding how fixtures connect to test cases.
+Needed clarification on using fake repositories instead of a real database.
+Want more practice writing advanced tests.
+
 # Thursday 09-07-2026
 ## Eshwar Yadav
 **What I Worked On**
