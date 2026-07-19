@@ -1109,6 +1109,29 @@ Want more practice writing advanced tests.
 - Faced challenges understanding authentication and authorization test flows.
 - Need more practice creating test scenarios and debugging failed test cases..
 
+## om
+
+What I Worked On
+
+Wrote unit tests for TaskService using fake repositories.
+Wrote integration tests using FastAPI's TestClient.
+Added tests to check user access permissions.
+Tested task creation, retrieval, deletion, validation, and error handling.
+
+What I Learned
+
+The difference between unit testing, integration testing, and authorization testing.
+How fake repositories and TestClient help verify app behavior.
+How authentication and permissions protect user-specific data.
+Got better with pytest, API responses, and error handling.
+
+Questions/Blockers
+
+Needed clarification on dependency overrides and test database sessions.
+Had trouble understanding authentication and authorization test flows.
+Want more practice writing test scenarios and debugging failed tests.
+
+
 # Tuesday 14-07-2026
 ## Nithin Nallabothula
 
