@@ -994,6 +994,35 @@ No major blockers after protecting the routes.
 - Improved knowledge of secure communication between the frontend and backend.
 - Learned how to troubleshoot authentication errors such as HTTP 401 (Unauthorized) and HTTP 403 (Forbidden).
 
+## om
+
+What I worked on
+
+Added JWT authentication and protected API routes.
+Added login and token-based access control.
+Linked tasks to the logged-in user's account.
+Made sure users can only access their own tasks.
+Updated frontend calls to include auth tokens.
+Tested login, task creation, deletion, and permissions.
+
+What I learned
+
+How JWT secures backend APIs.
+How FastAPI's Depends() handles authentication.
+The difference between authentication and authorization.
+How to link users and tasks in the database.
+How the frontend and backend communicate securely.
+How to handle 401 and 403 errors.
+
+Questions/Blockers
+
+Had trouble passing the logged-in user into task services.
+Fixed unauthorized-access errors on protected routes.
+Fixed token issues between frontend and backend.
+Still need to look into refresh tokens for better security.
+Still need to learn role-based permissions.
+
+
 
 # Tuesday 07-07-2026
 ## Eshwar Yadav
