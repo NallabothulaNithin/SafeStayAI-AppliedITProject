@@ -925,6 +925,32 @@ The frontend saves the token in local storage after login.
 **Blockers/Questions:**
 - Needed to understand how the get_current_user dependency validates JWT tokens.
 
+## om
+
+What I worked on
+
+Used JWT to protect API routes.
+Built the get_current_user function.
+Restricted task routes to logged-in users only.
+Added /auth/me to return the logged-in user's details.
+Tested protected routes using JWT tokens.
+
+What I learned
+
+Protected routes require a valid JWT token.
+get_current_user checks the token and returns the logged-in user.
+Users without a valid token get a 401 Unauthorized error.
+/auth/me returns the current logged-in user.
+The frontend must send the token in the Authorization header.
+
+Blockers/Questions
+
+Needed help understanding how get_current_user works.
+Checked how tokens get validated on protected routes.
+Tested API responses with both valid and invalid tokens.
+No major blockers after protecting the routes.
+
+
 # Thursday 02-07-2026
 ## Eshwar Yadav
 **What I worked on**
