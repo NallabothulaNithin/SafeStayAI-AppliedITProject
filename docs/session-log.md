@@ -863,6 +863,26 @@ No major blockers after finishing the migration work.
 - Needed help fixing authentication controller and repository errors.
 - Verified the login and registration endpoints after resolving the issues.
 
+## om
+
+What I worked on
+
+Added JWT login authentication to the FastAPI backend.
+Built register and login APIs.
+Added token generation and password verification.
+Updated the user repository to support login and registration.
+Connected the login routes to the app.
+Updated the frontend to save and use the login token.
+
+What I learned
+
+JWT is used to securely verify users.
+Passwords should be stored as hashes, not plain text.
+Logging in successfully returns an access token.
+Protected requests send the token in the Authorization header.
+The frontend saves the token in local storage after login.
+
+
 # Tuesday 30-06-2026
 ## Eshwar Yadav
 **What I worked on**
