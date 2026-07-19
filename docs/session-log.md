@@ -1150,3 +1150,23 @@ Want more practice writing test scenarios and debugging failed tests.
 - Gained experience troubleshooting Python environment and package dependency errors.
 - Better understood how unit tests and integration tests validate application behavior.
 - Improved debugging skills by interpreting stack traces and test failure reports.
+
+## om
+
+What I Worked On
+
+Continued work on the SafeStay AI project.
+Added a Remote Users and Providers section to the frontend.
+Fixed a CSS bug where text wasn't displaying correctly.
+Debugged issues connecting the frontend and backend.
+Worked through implementation steps 24–26, checking each change.
+Fixed Python dependency and test errors (including a pandas issue).
+Fixed failing unit and integration tests by correcting imports and config.
+
+What I Learned
+
+How frontend components interact with backend APIs and state.
+Got better at CSS styling and debugging display issues.
+Gained experience fixing Python environment and dependency errors.
+Better understood how unit and integration tests validate app behavior.
+Improved at reading stack traces and test failure reports.
