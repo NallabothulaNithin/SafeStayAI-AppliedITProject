@@ -794,6 +794,32 @@ Want to double-check data persistence settings across Docker container restarts.
 **Blockers/Questions:**
 - Faced issues configuring JWT authentication initially.
 
+## om
+
+What I worked on
+
+Set up Alembic to manage database changes.
+Stopped using create_all().
+Created and ran the first migration.
+Added a created_at column to the Task table.
+Made a new migration and tested both upgrade and downgrade.
+Checked the migration history.
+
+What I Learned
+
+Alembic helps manage changes to the database structure.
+Migrations are a better approach than create_all().
+upgrade head applies the latest migration.
+downgrade undoes the last migration.
+Every database change should be tracked through migrations.
+
+Blockers/Questions
+
+Needed help setting up Alembic correctly.
+Double-checked migration commands before running them.
+No major blockers after finishing the migration work.
+
+
 # Thursday 25-06-2026
 ## Eshwar Yadav
 **What I worked on**
