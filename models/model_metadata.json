@@ -1,0 +1,18 @@
+{
+    "features": [
+        "price",
+        "square_feet",
+        "bedrooms",
+        "bathrooms",
+        "price_per_sqft",
+        "rent_difference_from_median",
+        "rent_to_local_median_ratio",
+        "local_rent_zscore"
+    ],
+    "contamination": 0.05,
+    "model_name": "Isolation Forest",
+    "prediction_labels": {
+        "1": "Normal",
+        "-1": "Unusual"
+    }
+}
