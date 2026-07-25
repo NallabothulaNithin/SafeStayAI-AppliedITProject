@@ -794,6 +794,32 @@ Want to double-check data persistence settings across Docker container restarts.
 **Blockers/Questions:**
 - Faced issues configuring JWT authentication initially.
 
+## om
+
+What I worked on
+
+Set up Alembic to manage database changes.
+Stopped using create_all().
+Created and ran the first migration.
+Added a created_at column to the Task table.
+Made a new migration and tested both upgrade and downgrade.
+Checked the migration history.
+
+What I Learned
+
+Alembic helps manage changes to the database structure.
+Migrations are a better approach than create_all().
+upgrade head applies the latest migration.
+downgrade undoes the last migration.
+Every database change should be tracked through migrations.
+
+Blockers/Questions
+
+Needed help setting up Alembic correctly.
+Double-checked migration commands before running them.
+No major blockers after finishing the migration work.
+
+
 # Thursday 25-06-2026
 ## Eshwar Yadav
 **What I worked on**
@@ -837,6 +863,26 @@ Want to double-check data persistence settings across Docker container restarts.
 - Needed help fixing authentication controller and repository errors.
 - Verified the login and registration endpoints after resolving the issues.
 
+## om
+
+What I worked on
+
+Added JWT login authentication to the FastAPI backend.
+Built register and login APIs.
+Added token generation and password verification.
+Updated the user repository to support login and registration.
+Connected the login routes to the app.
+Updated the frontend to save and use the login token.
+
+What I learned
+
+JWT is used to securely verify users.
+Passwords should be stored as hashes, not plain text.
+Logging in successfully returns an access token.
+Protected requests send the token in the Authorization header.
+The frontend saves the token in local storage after login.
+
+
 # Tuesday 30-06-2026
 ## Eshwar Yadav
 **What I worked on**
@@ -878,6 +924,32 @@ Want to double-check data persistence settings across Docker container restarts.
 
 **Blockers/Questions:**
 - Needed to understand how the get_current_user dependency validates JWT tokens.
+
+## om
+
+What I worked on
+
+Used JWT to protect API routes.
+Built the get_current_user function.
+Restricted task routes to logged-in users only.
+Added /auth/me to return the logged-in user's details.
+Tested protected routes using JWT tokens.
+
+What I learned
+
+Protected routes require a valid JWT token.
+get_current_user checks the token and returns the logged-in user.
+Users without a valid token get a 401 Unauthorized error.
+/auth/me returns the current logged-in user.
+The frontend must send the token in the Authorization header.
+
+Blockers/Questions
+
+Needed help understanding how get_current_user works.
+Checked how tokens get validated on protected routes.
+Tested API responses with both valid and invalid tokens.
+No major blockers after protecting the routes.
+
 
 # Thursday 02-07-2026
 ## Eshwar Yadav
@@ -922,6 +994,35 @@ Want to double-check data persistence settings across Docker container restarts.
 - Improved knowledge of secure communication between the frontend and backend.
 - Learned how to troubleshoot authentication errors such as HTTP 401 (Unauthorized) and HTTP 403 (Forbidden).
 
+## om
+
+What I worked on
+
+Added JWT authentication and protected API routes.
+Added login and token-based access control.
+Linked tasks to the logged-in user's account.
+Made sure users can only access their own tasks.
+Updated frontend calls to include auth tokens.
+Tested login, task creation, deletion, and permissions.
+
+What I learned
+
+How JWT secures backend APIs.
+How FastAPI's Depends() handles authentication.
+The difference between authentication and authorization.
+How to link users and tasks in the database.
+How the frontend and backend communicate securely.
+How to handle 401 and 403 errors.
+
+Questions/Blockers
+
+Had trouble passing the logged-in user into task services.
+Fixed unauthorized-access errors on protected routes.
+Fixed token issues between frontend and backend.
+Still need to look into refresh tokens for better security.
+Still need to learn role-based permissions.
+
+
 
 # Tuesday 07-07-2026
 ## Eshwar Yadav
@@ -964,6 +1065,31 @@ Want to double-check data persistence settings across Docker container restarts.
 - Learned how fake repositories improve unit testing by isolating business logic.
 - Improved understanding of validating authentication and authorization through automated tests.
 
+## om
+
+What I worked on
+
+Set up a backend testing environment with Pytest.
+Configured an in-memory SQLite database for isolated tests.
+Added test fixtures for database sessions, users, and the TestClient.
+Created fake repositories to test without touching the real database.
+Wrote smoke tests to check task ownership and permissions.
+Ran automated tests to confirm everything works.
+
+What I Learned
+
+How Pytest is used for automated backend testing.
+How fixtures create reusable test setups.
+How dependency overrides help test FastAPI apps.
+Why fake repositories are useful for unit testing.
+How to test authentication and authorization behavior.
+
+Questions/Blockers
+
+Had trouble understanding how fixtures connect to test cases.
+Needed clarification on using fake repositories instead of a real database.
+Want more practice writing advanced tests.
+
 # Thursday 09-07-2026
 ## Eshwar Yadav
 **What I Worked On**
@@ -983,6 +1109,29 @@ Want to double-check data persistence settings across Docker container restarts.
 - Faced challenges understanding authentication and authorization test flows.
 - Need more practice creating test scenarios and debugging failed test cases..
 
+## om
+
+What I Worked On
+
+Wrote unit tests for TaskService using fake repositories.
+Wrote integration tests using FastAPI's TestClient.
+Added tests to check user access permissions.
+Tested task creation, retrieval, deletion, validation, and error handling.
+
+What I Learned
+
+The difference between unit testing, integration testing, and authorization testing.
+How fake repositories and TestClient help verify app behavior.
+How authentication and permissions protect user-specific data.
+Got better with pytest, API responses, and error handling.
+
+Questions/Blockers
+
+Needed clarification on dependency overrides and test database sessions.
+Had trouble understanding authentication and authorization test flows.
+Want more practice writing test scenarios and debugging failed tests.
+
+
 # Tuesday 14-07-2026
 ## Nithin Nallabothula
 
@@ -1001,3 +1150,23 @@ Want to double-check data persistence settings across Docker container restarts.
 - Gained experience troubleshooting Python environment and package dependency errors.
 - Better understood how unit tests and integration tests validate application behavior.
 - Improved debugging skills by interpreting stack traces and test failure reports.
+
+## om
+
+What I Worked On
+
+Continued work on the SafeStay AI project.
+Added a Remote Users and Providers section to the frontend.
+Fixed a CSS bug where text wasn't displaying correctly.
+Debugged issues connecting the frontend and backend.
+Worked through implementation steps 24–26, checking each change.
+Fixed Python dependency and test errors (including a pandas issue).
+Fixed failing unit and integration tests by correcting imports and config.
+
+What I Learned
+
+How frontend components interact with backend APIs and state.
+Got better at CSS styling and debugging display issues.
+Gained experience fixing Python environment and dependency errors.
+Better understood how unit and integration tests validate app behavior.
+Improved at reading stack traces and test failure reports.

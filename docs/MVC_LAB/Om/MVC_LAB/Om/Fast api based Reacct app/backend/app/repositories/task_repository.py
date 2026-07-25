@@ -11,11 +11,15 @@ class TaskRepository:
     def all(self) -> list[Task]:
         return list(self._db.scalars(select(Task)))
 
+    def all_for_user(self, owner_id: int) -> list[Task]:
+        """Return only the tasks owned by this user."""
+        return list(self._db.scalars(select(Task).where(Task.owner_id == owner_id)))
+
     def find(self, task_id: int) -> Task | None:
         return self._db.get(Task, task_id)
 
-    def add(self, title: str) -> Task:
-        task = Task(title=title)
+    def add(self, title: str, owner_id: int) -> Task:
+        task = Task(title=title, owner_id=owner_id)
         self._db.add(task)
         self._db.commit()
         self._db.refresh(task)
