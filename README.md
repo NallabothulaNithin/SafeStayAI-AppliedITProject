@@ -11,6 +11,7 @@ SafeStay AI is an AI-powered rental fraud detection system designed for students
 | Scrum Master | Madhav |
 | Developer | Eshwar yadav jakkula |
 | Developer | OM Kode|
+| Developer | Danish |
 
 ## Project Overview
 
@@ -31,10 +32,10 @@ service-a  ──►  service-b
 
 | Layer | Technology |
 |---|---|
-| Frontend | Eshwar |
-| Backend | |
-| Database | |
-| Deployment | |
+| Frontend | Danish |
+| Backend | Nithin Nallabothula and Eshwar |
+| Database | Madhav |
+| Deployment | Om Kode |
 
 ## Getting Started
 
