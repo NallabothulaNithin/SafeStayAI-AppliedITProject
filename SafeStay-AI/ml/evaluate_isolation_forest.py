@@ -9,18 +9,9 @@ import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATA_FILE = (
-    BASE_DIR
-    / "data"
-    / "processed"
-    / "rent_predictions.csv"
-)
+DATA_FILE = (BASE_DIR / "data" / "processed" / "rent_predictions.csv")
 
-OUTPUT_DIR = (
-    BASE_DIR
-    / "reports"
-    / "evaluation"
-)
+OUTPUT_DIR = (BASE_DIR / "reports" / "evaluation")
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
