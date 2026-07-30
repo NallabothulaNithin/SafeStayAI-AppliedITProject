@@ -87,7 +87,7 @@ uvicorn main:app --reload
 ## Repository Structure
 
 SafeStayAI-AppliedITProject/
-
+```
 │── backend/
 │     ├── main.py
 │     ├── requirements.txt
@@ -113,7 +113,7 @@ SafeStayAI-AppliedITProject/
 │── reports/
 │     ├── EDA graphs
 │     ├── Model evaluation
-
+```
 
 ## Documentation
 
