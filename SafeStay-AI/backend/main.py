@@ -1,10 +1,15 @@
 from pathlib import Path
 from typing import List
+import json
+import os
+import secrets
+
 
 import joblib
 import numpy as np
 import pandas as pd
-from fastapi import FastAPI, HTTPException
+from fastapi import Depends, FastAPI, Header, HTTPException
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -18,6 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 MODEL_FILE = BASE_DIR / "models" / "isolation_forest.pkl"
 SCALER_FILE = BASE_DIR / "models" / "scaler.pkl"
 STATISTICS_FILE = BASE_DIR / "models" / "city_statistics.csv"
+
+REPORTS_DIR = BASE_DIR / "reports"
+METADATA_FILE = BASE_DIR / "models" / "model_metadata.json"
+PREDICTION_SUMMARY_FILE = REPORTS_DIR / "evaluation" / "prediction_summary.csv"
+CLEANED_DATA_FILE = BASE_DIR / "data" / "processed" / "rent_listings_cleaned.csv"
+
+ADMIN_USERNAME = os.getenv("SAFESTAY_ADMIN_USERNAME", "admin")
+ADMIN_PASSWORD = os.getenv("SAFESTAY_ADMIN_PASSWORD", "SafeStay@123")
+ADMIN_TOKEN = secrets.token_urlsafe(32)
 
 
 # ---------------------------------------------------------
@@ -73,6 +87,10 @@ app = FastAPI(
     ),
     version="1.0.0",
 )
+
+
+# Report images are exposed as read-only static assets for the admin dashboard.
+app.mount("/reports", StaticFiles(directory=REPORTS_DIR), name="reports")
 
 
 # ---------------------------------------------------------
@@ -154,6 +172,25 @@ class RentalPredictionResponse(BaseModel):
     disclaimer: str
 
 
+
+
+class AdminLoginRequest(BaseModel):
+    username: str = Field(..., min_length=1)
+    password: str = Field(..., min_length=1)
+
+
+class AdminLoginResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    admin_name: str
+
+
+def require_admin(authorization: str | None = Header(default=None)) -> None:
+    expected = f"Bearer {ADMIN_TOKEN}"
+    if not authorization or not secrets.compare_digest(authorization, expected):
+        raise HTTPException(status_code=401, detail="Admin authentication required.")
+
+
 # ---------------------------------------------------------
 # Health endpoint
 # ---------------------------------------------------------
@@ -173,6 +210,67 @@ def health_check():
         "status": "healthy",
         "model_loaded": True,
         "statistics_loaded": True,
+    }
+
+
+
+
+@app.post("/admin/login", response_model=AdminLoginResponse)
+def admin_login(credentials: AdminLoginRequest):
+    username_ok = secrets.compare_digest(credentials.username, ADMIN_USERNAME)
+    password_ok = secrets.compare_digest(credentials.password, ADMIN_PASSWORD)
+    if not (username_ok and password_ok):
+        raise HTTPException(status_code=401, detail="Invalid admin username or password.")
+    return AdminLoginResponse(access_token=ADMIN_TOKEN, admin_name="SafeStay Administrator")
+
+
+@app.get("/admin/dashboard")
+def admin_dashboard(_: None = Depends(require_admin)):
+    images = []
+    for image_path in sorted(REPORTS_DIR.rglob("*.png")):
+        relative = image_path.relative_to(REPORTS_DIR)
+        category = relative.parts[0].replace("_", " ").title()
+        title = image_path.stem.replace("_", " ").replace("-", " ").title()
+        images.append({
+            "title": title,
+            "category": category,
+            "url": f"/reports/{relative.as_posix()}",
+        })
+
+    metadata = {}
+    if METADATA_FILE.exists():
+        metadata = json.loads(METADATA_FILE.read_text())
+
+    prediction_counts = {"Normal": 0, "Unusual": 0}
+    if PREDICTION_SUMMARY_FILE.exists():
+        summary = pd.read_csv(PREDICTION_SUMMARY_FILE)
+        prediction_counts.update(dict(zip(summary["prediction"], summary["count"].astype(int))))
+
+    total_predictions = int(sum(prediction_counts.values()))
+    unusual_count = int(prediction_counts.get("Unusual", 0))
+    unusual_rate = round((unusual_count / total_predictions * 100), 2) if total_predictions else 0
+
+    dataset_rows = 0
+    if CLEANED_DATA_FILE.exists():
+        dataset_rows = max(sum(1 for _ in CLEANED_DATA_FILE.open(errors="ignore")) - 1, 0)
+
+    return {
+        "metrics": {
+            "model": metadata.get("model_name", "Isolation Forest"),
+            "contamination": metadata.get("contamination", 0.05),
+            "features": len(metadata.get("features", [])),
+            "dataset_rows": dataset_rows,
+            "total_predictions": total_predictions,
+            "normal_predictions": int(prediction_counts.get("Normal", 0)),
+            "unusual_predictions": unusual_count,
+            "unusual_rate": unusual_rate,
+            "graph_count": len(images),
+        },
+        "prediction_distribution": [
+            {"label": "Normal", "value": int(prediction_counts.get("Normal", 0))},
+            {"label": "Unusual", "value": unusual_count},
+        ],
+        "images": images,
     }
 
 
