@@ -15,18 +15,37 @@ SafeStay AI is an AI-powered rental fraud detection system designed for students
 
 ## Project Overview
 
-_Brief description of the problem you are solving, your target users, and the core value your product delivers._
+SafeStay AI is an AI-powered rental listing analysis system that helps identify statistically unusual rental listings.
+
+The system compares a property's rent with similar properties in the same location using feature engineering and an Isolation Forest anomaly detection model.
+
+Instead of directly predicting fraud, SafeStay AI highlights listings that significantly deviate from normal market behaviour, helping users make more informed rental decisions.
 
 ## Architecture
 
 _Add your architecture diagram here (C4 Context or Container diagram). Update this as the project evolves._
 
-```
-service-a  ──►  service-b
-    │
-    ▼
-  database
-```
+              User
+               │
+               ▼
+      React Frontend
+               │
+        HTTP Request
+               │
+               ▼
+      FastAPI Backend
+               │
+     Feature Engineering
+               │
+     StandardScaler
+               │
+     Isolation Forest
+               │
+               ▼
+     Prediction Result
+               │
+               ▼
+     Admin Dashboard
 
 ## Tech Stack
 
@@ -34,45 +53,83 @@ service-a  ──►  service-b
 |---|---|
 | Frontend | Danish |
 | Backend | Nithin Nallabothula and Eshwar |
-| Database | Madhav |
+| Documetation | Madhav |
 | Deployment | Om Kode |
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/) and Docker Compose installed
+- Python 3.10 or later
+- Node.js 18 or later
+- npm
 - Git
 
 ### Run locally
 
-```bash
-git clone https://github.com/<your-org>/<your-repo>.git
-cd <your-repo>
-cp .env.example .env   # fill in your values
-docker compose up --build
-```
+# Clone repository
+git clone https://github.com/NallabothulaNithin/SafeStayAI-AppliedITProject.git
 
-The app will be available at `http://localhost:3000`.
+cd SafeStayAI-AppliedITProject
+
+# Install frontend dependencies
+cd frontend
+npm install
+
+# Start React
+npm run dev
+
+# Start backend
+cd ../backend
+pip install -r requirements.txt
+uvicorn main:app --reload
 
 ## Repository Structure
 
-```
-├── README.md
-├── .gitignore
-├── docs/
-│   └── vision.md            # Product vision, personas, user stories
-├── services/
-│   ├── service-a/           # First microservice
-│   └── service-b/           # Second microservice
-└── docker-compose.yml
-```
+SafeStayAI-AppliedITProject/
+
+│── backend/
+│     ├── main.py
+│     ├── requirements.txt
+│
+│── frontend/
+│     ├── src/
+│     ├── public/
+│
+│── data/
+│     ├── raw/
+│     ├── processed/
+│
+│── ml/
+│     ├── prepare_data.py
+│     ├── exploratory_analysis.py
+│     ├── train_isolation_forest.py
+│     ├── evaluate_isolation_forest.py
+│
+│── models/
+│     ├── isolation_forest.pkl
+│     ├── scaler.pkl
+│
+│── reports/
+│     ├── EDA graphs
+│     ├── Model evaluation
+
 
 ## Documentation
 
+## Documentation
 
+The project documentation includes:
 
+- Project Overview
+- System Architecture
+- Dataset Description
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Isolation Forest Model
+- Model Evaluation
 
 ## License
 
-MIT
+For academic and educational purposes only.
