@@ -693,6 +693,19 @@ Focus on deeper mastery of advanced React state management patterns.
 - Needed to understand the PostgreSQL connection string format.
 - Faced confusion regarding the use of service names instead of localhost in Docker networking.
 
+## Madhav
+**What I Worked On:**
+- Configured PostgreSQL, backend, and frontend services using docker-compose.yml.
+- Integrated SQLAlchemy, Psycopg, and Alembic dependencies into the backend application.
+- Built and launched the Docker containers to establish the development environment.
+- Implemented and tested a temporary /db-ping endpoint to verify successful database connectivity.
+
+**What I Learned:**
+Learned how Docker Compose orchestrates multiple services and manages their dependencies.
+Gained an understanding of how FastAPI connects to PostgreSQL using SQLAlchemy and a database connection URL.
+Understood the role of Docker health checks and container networking in ensuring reliable service communication.
+Learned how to execute and verify basic database queries using SQLAlchemy.
+
 # Thursday 11-06-2026
 ## Eshwar Yadav
 
