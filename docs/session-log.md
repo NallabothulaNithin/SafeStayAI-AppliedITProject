@@ -821,6 +821,26 @@ Need to review best practices for React form state and managing related entities
 
 Want to double-check data persistence settings across Docker container restarts.
 
+## Madhav
+**What I worked on**
+- Enhanced the MVC-based Task Management application by extending its core functionality.
+- Integrated the React frontend with the FastAPI backend for seamless      communication.
+- Implemented user-to-task association functionality.
+- Added API integration to retrieve and display users and tasks.
+- Updated the frontend to show the assigned owner for each task.
+- Tested and validated backend endpoints using Swagger UI and browser requests.
+- Debugged frontend rendering issues and resolved API integration problems.
+- Investigated and fixed task creation issues related to user ID validation.
+
+**What I learned**
+- Gained a deeper understanding of how React components communicate with FastAPI APIs.
+- Learned to use useEffect() and Promise.all() to efficiently fetch multiple datasets.
+- Understood how to transform API responses into lookup objects using Object.fromEntries().
+- Learned to identify and resolve CORS-related issues and handle backend API responses effectively.
+- Gained practical experience with FastAPI request validation and custom exception handling.
+- Strengthened understanding of the Controller → Service → Repository → Database flow within an MVC architecture.
+- Improved debugging skills by using browser DevTools and Docker logs to troubleshoot frontend and backend issues.
+
 # Thursday 18-06-2026
 ## Eshwar Yadav
 **What I worked on**
