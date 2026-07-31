@@ -36,6 +36,20 @@ Mastered using git checkout -b (or git switch -c) to simultaneously create and s
 **Open Questions:** 
 What is the correct workflow for safely merging local branch changes back into main?
 
+## Danish
+
+**What I worked on:**
+
+Organized and created the project folder structure.
+Began development of the SafeStay AI Rental Fraud Detection project.
+Linked the GitHub repository with my local development environment.
+
+**What I learned:**
+Gained an understanding of Scrum and Agile methodologies and their terminology.
+Practiced essential Git commands, including clone, pull, commit, and push.
+
+**Blockers / Questions:**
+I need a better understanding of the deployment process and how to deploy the project successfully.
 
 # Thursday 30-04-2026
 #Eshwar yadav
@@ -509,29 +523,6 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 - Troubleshot API routing problems caused by incorrect endpoint paths that resulted in 404 errors.
 - Identified the need for further practice in React state management and effective API integration techniques.
 
-## Madhav
-
-**What I Worked On:**
-
-- Built a FastAPI application using the MVC (Model-View-Controller) architecture to ensure a structured and maintainable codebase.
-- Designed Pydantic models to validate API request and response data.
-- Developed RESTful API endpoints using FastAPI's APIRouter.
-- Implemented core business logic within the service layer through the TaskService.
-- Created CRUD operations for task management, including task creation, retrieval, and deletion.
-- Tested and verified API functionality using FastAPI's built-in Swagger UI (/docs).
-- Integrated the React frontend with the FastAPI backend for seamless communication.
-- Implemented task creation and deletion features in the React user interface.
-- Connected the frontend API layer (api.js) with backend endpoints to enable end-to-end data flow.
-
-**What I Learned:**
-
-- Developed a strong understanding of the MVC architecture and the clear separation of responsibilities between controllers, services, and models.
-- Learned to organize and manage API endpoints efficiently using FastAPI's APIRouter.
-- Gained practical experience in validating request and response data with Pydantic schemas.
-- Built hands-on experience in designing and implementing CRUD APIs using FastAPI.
-- Understood how React components interact with backend services through API calls for data exchange.
-- Learned the importance of keeping business logic within the service layer to improve code maintainability, scalability, and reusability.
-
 
 ## om
 **Tasks Completed:**
@@ -568,25 +559,6 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 - Experienced API routing and endpoint configuration problems that resulted in request failures and 404 errors.
 - Required additional troubleshooting to ensure proper communication between the React frontend and FastAPI backend.
 - Need more practice with React state management, API integration, and debugging full-stack application issues.
-
-## Madhav
-
-**What I Worked On:**
-
-- Developed a Task Manager application using FastAPI and React by following the MVC architecture.
-- Implemented complete CRUD functionality for creating, retrieving, updating, and deleting tasks.
-- Built REST API endpoints using FastAPI's APIRouter and integrated them with the service layer.
-- Connected the React frontend with FastAPI backend APIs to enable seamless task management.
-- Validated API functionality using Swagger UI and verified end-to-end communication between the frontend and backend.
-
-**What I Learned:**
-
-- Gained a clear understanding of the MVC architecture and the roles of controllers, services, and models.
-- Developed practical experience in building and managing REST APIs using FastAPI.
-- Improved understanding of how React components communicate with backend services through APIs.
-- Learned to implement request and response validation using Pydantic schemas.
-- Recognized the importance of maintaining business logic within the service layer to build scalable and maintainable applications.
-
 
 ## Nithin
 
@@ -693,19 +665,6 @@ Focus on deeper mastery of advanced React state management patterns.
 - Needed to understand the PostgreSQL connection string format.
 - Faced confusion regarding the use of service names instead of localhost in Docker networking.
 
-## Madhav
-**What I Worked On:**
-- Configured PostgreSQL, backend, and frontend services using docker-compose.yml.
-- Integrated SQLAlchemy, Psycopg, and Alembic dependencies into the backend application.
-- Built and launched the Docker containers to establish the development environment.
-- Implemented and tested a temporary /db-ping endpoint to verify successful database connectivity.
-
-**What I Learned:**
-Learned how Docker Compose orchestrates multiple services and manages their dependencies.
-Gained an understanding of how FastAPI connects to PostgreSQL using SQLAlchemy and a database connection URL.
-Understood the role of Docker health checks and container networking in ensuring reliable service communication.
-Learned how to execute and verify basic database queries using SQLAlchemy.
-
 # Thursday 11-06-2026
 ## Eshwar Yadav
 
@@ -729,20 +688,6 @@ Learned how to execute and verify basic database queries using SQLAlchemy.
 - Clarify when to use Session, select(), commit(), and refresh().
 - Ensuring database sessions are properly opened and closed per request.
 - Verifying that task data persists after restarting backend containers.
-
-## Madhav
-**What I worked on**
-- Learned how SQLAlchemy models map Python classes to database tables using ORM.
-- Gained an understanding of the repository pattern for separating database operations from business logic.
-- Learned how FastAPI's dependency injection manages database sessions and service instances.
-- Understood how Pydantic schemas interact with ORM models using  
-  from_attributes=True.
-
- **What I learned**
-- Gained a clear understanding of the application flow from Controller → Service → Repository → Database.
-- Learned when and how to use Session, select(), commit(), and refresh() for database operations.
-- Understood the importance of properly managing database sessions throughout each request lifecycle.
-- Verified that task data is correctly persisted and remains available after restarting backend containers.
 
 ## om
 **Tasks Completed:**
@@ -821,26 +766,6 @@ Need to review best practices for React form state and managing related entities
 
 Want to double-check data persistence settings across Docker container restarts.
 
-## Madhav
-**What I worked on**
-- Enhanced the MVC-based Task Management application by extending its core functionality.
-- Integrated the React frontend with the FastAPI backend for seamless      communication.
-- Implemented user-to-task association functionality.
-- Added API integration to retrieve and display users and tasks.
-- Updated the frontend to show the assigned owner for each task.
-- Tested and validated backend endpoints using Swagger UI and browser requests.
-- Debugged frontend rendering issues and resolved API integration problems.
-- Investigated and fixed task creation issues related to user ID validation.
-
-**What I learned**
-- Gained a deeper understanding of how React components communicate with FastAPI APIs.
-- Learned to use useEffect() and Promise.all() to efficiently fetch multiple datasets.
-- Understood how to transform API responses into lookup objects using Object.fromEntries().
-- Learned to identify and resolve CORS-related issues and handle backend API responses effectively.
-- Gained practical experience with FastAPI request validation and custom exception handling.
-- Strengthened understanding of the Controller → Service → Repository → Database flow within an MVC architecture.
-- Improved debugging skills by using browser DevTools and Docker logs to troubleshoot frontend and backend issues.
-
 # Thursday 18-06-2026
 ## Eshwar Yadav
 **What I worked on**
@@ -908,21 +833,6 @@ Needed help setting up Alembic correctly.
 Double-checked migration commands before running them.
 No major blockers after finishing the migration work.
 
-## Madhav
-**What I worked on**
-- Configured Alembic to manage database schema migrations.
-- Removed the create_all() approach in favor of migration-based schema management.
-- Created and applied the initial database migration.
-- Added a created_at column to the Task table through a new migration.
-- Generated and tested migration upgrades and downgrades to verify schema changes.
-- Reviewed and validated the database migration history.
-
-**What I Learned:**
-- Learned how Alembic is used to manage and track database schema changes.
-- Understood why migration-based schema management is preferred over using create_all().
-- Learned that upgrade head applies the latest available database migration.
-- Gained an understanding of how downgrade rolls back the most recent migration.
-- Recognized the importance of tracking all database schema changes through version-controlled migrations.
 
 # Thursday 25-06-2026
 ## Eshwar Yadav
@@ -986,21 +896,6 @@ Logging in successfully returns an access token.
 Protected requests send the token in the Authorization header.
 The frontend saves the token in local storage after login.
 
-## Madhav
-**What I worked on**
-- Implemented JWT-based authentication in the FastAPI backend.
-- Developed user registration and login API endpoints.
-- Added secure JWT token generation and password verification mechanisms.
-- Enhanced the user repository to support user registration and authentication.
-- Integrated authentication routes into the application.
-- Updated the React frontend to securely store and use the JWT token for   authenticated API requests.
-
-**What I learned**
-- Learned how JWT enables secure, stateless user authentication.
-- Understood the importance of hashing passwords before storing them in the database.
-- Learned that successful authentication returns an access token used to authorize subsequent API requests.
-- Gained an understanding of how protected endpoints validate JWT tokens provided in the Authorization header.
-- Learned how the frontend manages authenticated user sessions by securely storing the token and including it in API requests.
 
 # Tuesday 30-06-2026
 ## Eshwar Yadav
@@ -1068,21 +963,6 @@ Needed help understanding how get_current_user works.
 Checked how tokens get validated on protected routes.
 Tested API responses with both valid and invalid tokens.
 No major blockers after protecting the routes.
-
-## Madhav
-**What I worked on**
-- Implemented JWT-based authentication to secure protected API routes.
-- Created the get_current_user dependency to authenticate incoming requests.
-- Restricted task-related endpoints so they are accessible only to authenticated users.
-- Added the /auth/me endpoint to return the details of the currently logged-in user.
-Tested protected API endpoints using valid JWT access tokens.
-
-**What I learned**
-- Learned that protected API routes require a valid JWT token for access.
-- Understood how the get_current_user dependency validates the token and retrieves the authenticated user.
-- Learned that unauthorized requests receive a 401 Unauthorized response.
-- Gained an understanding of how the /auth/me endpoint returns the details of the currently authenticated user.
-- Recognized the importance of including the JWT token in the Authorization header for authenticated frontend requests.
 
 
 # Thursday 02-07-2026
@@ -1156,23 +1036,6 @@ Fixed token issues between frontend and backend.
 Still need to look into refresh tokens for better security.
 Still need to learn role-based permissions.
 
-## Madhav
-**What I worked on**
-- Implemented JWT-based authentication to secure backend API endpoints.
-- Developed user login functionality using token-based authentication.
-- Associated task records with authenticated user accounts.
-- Enforced authorization rules to ensure users can access only their own tasks.
-- Updated frontend API requests to include JWT access tokens for authenticated operations.
-- Tested login, task creation, task deletion, and protected API routes to verify end-to-end functionality.
-
-**What I Learned**
-- Gained a strong understanding of how JWT authentication secures REST APIs.
-- Learned how FastAPI's dependency injection (Depends) is used to implement authentication.
-- Developed a clear understanding of the difference between authentication and authorization.
-- Learned how to manage user–task relationships within the database.
-- Improved knowledge of secure communication between the frontend and backend using authenticated requests.
-- Gained practical experience in troubleshooting authentication and authorization issues, including HTTP 401 (Unauthorized) and HTTP 403 (Forbidden) errors.
-
 
 
 # Tuesday 07-07-2026
@@ -1241,23 +1104,6 @@ Had trouble understanding how fixtures connect to test cases.
 Needed clarification on using fake repositories instead of a real database.
 Want more practice writing advanced tests.
 
-## Madhav
-**What I Worked On**
-- Set up a backend testing environment using Pytest.
-- Configured an in-memory SQLite database for isolated and efficient testing.
-- Created test fixtures for database sessions, test users, and the FastAPI TestClient.
-- Implemented fake repositories to enable testing without relying on the actual database.
-- Developed smoke tests to validate task ownership and authorization behavior.
-- Executed automated test cases to verify the application's functionality and reliability.
-
-**What I Learned**
-- Learned how to use Pytest for automating backend testing.
-- Understood the role of fixtures in creating reusable and maintainable test environments.
-- Gained hands-on experience with FastAPI dependency overrides for application testing.
-- Learned how fake repositories isolate business logic, making unit tests more reliable and efficient.
-- Improved understanding of validating authentication and authorization through automated test cases.
-
-
 # Thursday 09-07-2026
 ## Eshwar Yadav
 **What I Worked On**
@@ -1276,16 +1122,3 @@ Want more practice writing advanced tests.
 - Needed clarification on dependency overrides and test database sessions.
 - Faced challenges understanding authentication and authorization test flows.
 - Need more practice creating test scenarios and debugging failed test cases..
-
-## Madhav
-**What I Worked On**
-- Developed unit tests for the TaskService using fake repositories to isolate business logic.
-- Implemented integration tests for API endpoints using the FastAPI TestClient.
-- Added authorization test cases to verify user access control for task operations.
-- Validated task creation, retrieval, deletion, input validation, and error-handling scenarios through comprehensive testing.
-
-**What I Learned**
-- Gained a clear understanding of the differences between unit testing, integration testing, and authorization testing.
-- Learned how fake repositories and the FastAPI TestClient are used to validate application behavior in isolation and end-to-end.
-- Developed a better understanding of how authentication and authorization safeguard user-specific data.
-- Improved practical knowledge of Pytest, API response validation, and exception handling through automated testing.
