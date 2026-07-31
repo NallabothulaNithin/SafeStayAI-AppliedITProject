@@ -1069,6 +1069,21 @@ Checked how tokens get validated on protected routes.
 Tested API responses with both valid and invalid tokens.
 No major blockers after protecting the routes.
 
+## Madhav
+**What I worked on**
+- Implemented JWT-based authentication to secure protected API routes.
+- Created the get_current_user dependency to authenticate incoming requests.
+- Restricted task-related endpoints so they are accessible only to authenticated users.
+- Added the /auth/me endpoint to return the details of the currently logged-in user.
+Tested protected API endpoints using valid JWT access tokens.
+
+**What I learned**
+- Learned that protected API routes require a valid JWT token for access.
+- Understood how the get_current_user dependency validates the token and retrieves the authenticated user.
+- Learned that unauthorized requests receive a 401 Unauthorized response.
+- Gained an understanding of how the /auth/me endpoint returns the details of the currently authenticated user.
+- Recognized the importance of including the JWT token in the Authorization header for authenticated frontend requests.
+
 
 # Thursday 02-07-2026
 ## Eshwar Yadav
