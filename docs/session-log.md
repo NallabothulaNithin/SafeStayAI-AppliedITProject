@@ -1241,6 +1241,23 @@ Had trouble understanding how fixtures connect to test cases.
 Needed clarification on using fake repositories instead of a real database.
 Want more practice writing advanced tests.
 
+## Madhav
+**What I Worked On**
+- Set up a backend testing environment using Pytest.
+- Configured an in-memory SQLite database for isolated and efficient testing.
+- Created test fixtures for database sessions, test users, and the FastAPI TestClient.
+- Implemented fake repositories to enable testing without relying on the actual database.
+- Developed smoke tests to validate task ownership and authorization behavior.
+- Executed automated test cases to verify the application's functionality and reliability.
+
+**What I Learned**
+- Learned how to use Pytest for automating backend testing.
+- Understood the role of fixtures in creating reusable and maintainable test environments.
+- Gained hands-on experience with FastAPI dependency overrides for application testing.
+- Learned how fake repositories isolate business logic, making unit tests more reliable and efficient.
+- Improved understanding of validating authentication and authorization through automated test cases.
+
+
 # Thursday 09-07-2026
 ## Eshwar Yadav
 **What I Worked On**
