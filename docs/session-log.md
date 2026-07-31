@@ -66,6 +66,19 @@ I need a better understanding of the deployment process and how to deploy the pr
 **Key Takeaways:**
  Discovered several specialized platforms for UI/UX design inspiration and gained a clearer understanding of the end-to-end software development lifecycle.
 
+ ## Danish
+
+ **What I worked on:**
+
+Created and submitted a pull request after completing my assigned changes.
+Worked with Git to manage code changes and collaborate with the team.
+
+**What I learned:**
+
+Learned how to create and switch branches.
+Practiced cloning repositories, updating local changes, merging branches, and creating pull requests.
+Improved my understanding of the Git workflow used in team projects.
+
 # Tuesday 05-05-2026
 ## Madhav
 **What I worked on:**
