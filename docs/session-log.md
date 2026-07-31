@@ -117,6 +117,19 @@ Improved my understanding of the Git workflow used in team projects.
 **Key Takeaways:**
  Realized the depth of planning required to truly step into the users' shoes and design from their perspective.
 
+ ## Danish
+
+ **What I worked on:**
+
+Worked on the GitHub repository.
+Updated the session log and managed changes using Git.
+
+**What I learned:**
+
+Learned how to create a branch, update the session log, and create a pull request.
+Learned how to merge a branch into the main branch.
+Gained an understanding of user personas and their role in the development process.
+
 # Thursday07-05-2026
 ## Eshwar yadav
 **What I worked on:**
