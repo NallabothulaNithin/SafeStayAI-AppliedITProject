@@ -986,6 +986,21 @@ Logging in successfully returns an access token.
 Protected requests send the token in the Authorization header.
 The frontend saves the token in local storage after login.
 
+## Madhav
+**What I worked on**
+- Implemented JWT-based authentication in the FastAPI backend.
+- Developed user registration and login API endpoints.
+- Added secure JWT token generation and password verification mechanisms.
+- Enhanced the user repository to support user registration and authentication.
+- Integrated authentication routes into the application.
+- Updated the React frontend to securely store and use the JWT token for   authenticated API requests.
+
+**What I learned**
+- Learned how JWT enables secure, stateless user authentication.
+- Understood the importance of hashing passwords before storing them in the database.
+- Learned that successful authentication returns an access token used to authorize subsequent API requests.
+- Gained an understanding of how protected endpoints validate JWT tokens provided in the Authorization header.
+- Learned how the frontend manages authenticated user sessions by securely storing the token and including it in API requests.
 
 # Tuesday 30-06-2026
 ## Eshwar Yadav
