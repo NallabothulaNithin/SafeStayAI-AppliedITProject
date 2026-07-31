@@ -569,6 +569,25 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 - Required additional troubleshooting to ensure proper communication between the React frontend and FastAPI backend.
 - Need more practice with React state management, API integration, and debugging full-stack application issues.
 
+## Madhav
+
+**What I Worked On:**
+
+- Developed a Task Manager application using FastAPI and React by following the MVC architecture.
+- Implemented complete CRUD functionality for creating, retrieving, updating, and deleting tasks.
+- Built REST API endpoints using FastAPI's APIRouter and integrated them with the service layer.
+- Connected the React frontend with FastAPI backend APIs to enable seamless task management.
+- Validated API functionality using Swagger UI and verified end-to-end communication between the frontend and backend.
+
+**What I Learned:**
+
+- Gained a clear understanding of the MVC architecture and the roles of controllers, services, and models.
+- Developed practical experience in building and managing REST APIs using FastAPI.
+- Improved understanding of how React components communicate with backend services through APIs.
+- Learned to implement request and response validation using Pydantic schemas.
+- Recognized the importance of maintaining business logic within the service layer to build scalable and maintainable applications.
+
+
 ## Nithin
 
 **What I Worked On:**
