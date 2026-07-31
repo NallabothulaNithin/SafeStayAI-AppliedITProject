@@ -1156,6 +1156,23 @@ Fixed token issues between frontend and backend.
 Still need to look into refresh tokens for better security.
 Still need to learn role-based permissions.
 
+## Madhav
+**What I worked on**
+- Implemented JWT-based authentication to secure backend API endpoints.
+- Developed user login functionality using token-based authentication.
+- Associated task records with authenticated user accounts.
+- Enforced authorization rules to ensure users can access only their own tasks.
+- Updated frontend API requests to include JWT access tokens for authenticated operations.
+- Tested login, task creation, task deletion, and protected API routes to verify end-to-end functionality.
+
+**What I Learned**
+- Gained a strong understanding of how JWT authentication secures REST APIs.
+- Learned how FastAPI's dependency injection (Depends) is used to implement authentication.
+- Developed a clear understanding of the difference between authentication and authorization.
+- Learned how to manage user–task relationships within the database.
+- Improved knowledge of secure communication between the frontend and backend using authenticated requests.
+- Gained practical experience in troubleshooting authentication and authorization issues, including HTTP 401 (Unauthorized) and HTTP 403 (Forbidden) errors.
+
 
 
 # Tuesday 07-07-2026
