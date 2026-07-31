@@ -730,6 +730,20 @@ Learned how to execute and verify basic database queries using SQLAlchemy.
 - Ensuring database sessions are properly opened and closed per request.
 - Verifying that task data persists after restarting backend containers.
 
+## Madhav
+**What I worked on**
+- Learned how SQLAlchemy models map Python classes to database tables using ORM.
+- Gained an understanding of the repository pattern for separating database operations from business logic.
+- Learned how FastAPI's dependency injection manages database sessions and service instances.
+- Understood how Pydantic schemas interact with ORM models using  
+  from_attributes=True.
+
+ **What I learned**
+- Gained a clear understanding of the application flow from Controller → Service → Repository → Database.
+- Learned when and how to use Session, select(), commit(), and refresh() for database operations.
+- Understood the importance of properly managing database sessions throughout each request lifecycle.
+- Verified that task data is correctly persisted and remains available after restarting backend containers.
+
 ## om
 **Tasks Completed:**
  Wrapped up the second practical milestone in the ORM lab series.
