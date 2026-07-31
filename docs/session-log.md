@@ -908,6 +908,21 @@ Needed help setting up Alembic correctly.
 Double-checked migration commands before running them.
 No major blockers after finishing the migration work.
 
+## Madhav
+**What I worked on**
+- Configured Alembic to manage database schema migrations.
+- Removed the create_all() approach in favor of migration-based schema management.
+- Created and applied the initial database migration.
+- Added a created_at column to the Task table through a new migration.
+- Generated and tested migration upgrades and downgrades to verify schema changes.
+- Reviewed and validated the database migration history.
+
+**What I Learned:**
+- Learned how Alembic is used to manage and track database schema changes.
+- Understood why migration-based schema management is preferred over using create_all().
+- Learned that upgrade head applies the latest available database migration.
+- Gained an understanding of how downgrade rolls back the most recent migration.
+- Recognized the importance of tracking all database schema changes through version-controlled migrations.
 
 # Thursday 25-06-2026
 ## Eshwar Yadav
