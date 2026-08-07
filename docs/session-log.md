@@ -176,6 +176,24 @@ Gained deeper insights into other team projects and their workflows.
 - Understood the value of collecting feedback and recommendations during project discussions.
 - Explored how additional features can enhance the user experience in accommodation platforms.
 
+## Danish
+
+**What I Worked on:**
+
+Studied the concept of user stories in system design.
+Discussed different classmates’ projects and collected recommendations for the SafeStay AI project.
+Reviewed feedback from other groups to identify possible improvements and additional features.
+
+**What I Learned:**
+
+Understood how user stories describe user requirements and system functionality.
+Learned how feedback from team discussions can help improve a project.
+Gained a better understanding of how additional features can enhance the user experience of accommodation platforms.
+
+**Blockers/Questions:**
+
+Need to explore how AI can provide more accurate and personalized accommodation recommendations.
+
 ## om
 **Tasks Completed:**
  Pushed the finalized user personas and scenarios to GitHub, attended the team's daily Scrum meeting, and swapped project feedback with neighboring development teams.
@@ -202,6 +220,25 @@ Gained deeper insights into other team projects and their workflows.
 **Blockers/Questions:**
 - Need to configure SSH, FTP, and SCP in the next step.
 - Need to understand web server installation and deplyment process.
+
+## Danish 
+
+**What I Worked on:**
+
+Installed and configured Oracle VM VirtualBox successfully.
+Set up a Linux operating system within the virtual machine.
+Started preparing the virtual environment for upcoming development tasks.
+
+**What I Learned:**
+
+Learned how to create, configure, and manage a virtual machine using VirtualBox.
+Gained an understanding of the Linux installation process in a virtualized environment.
+Became familiar with the basic configuration required for a Linux development environment.
+
+**Blockers/Questions:**
+
+Need to configure and test SSH, FTP, and SCP services in the next phase.
+Need to learn more about web server installation, configuration, and deployment.
 
 ## Madhav
 **What I Worked on:**
@@ -300,6 +337,27 @@ Gained deeper insights into other team projects and their workflows.
 **Key Takeaways:**
  Learned how to leverage scp and FileZilla for seamless file transfers, and researched the leading local server and hosting infrastructure providers in both Germany and India.
 
+ ## Danish 
+
+ **What I Worked on:**
+
+Configured SSH, FTP, and SCP services within the Linux virtual machine.
+Installed and set up a web server for hosting.
+Deployed a static website on the configured server.
+Cloned the GitHub repository and synchronized it with the local environment.
+
+**What I Learned:**
+
+Learned how SSH provides secure remote access and how SCP can be used for secure file transfers.
+Gained an understanding of web server installation and configuration.
+Learned the basic process of deploying and hosting a static website.
+Improved my understanding of cloning and synchronizing GitHub repositories.
+
+**Blockers/Questions:**
+
+Encountered some difficulties while transferring files through SCP and setting the correct file paths.
+Need more practice with Linux commands and server configuration.
+
 
 # Thursday 21-05-2026
 ## Nithin
@@ -396,6 +454,31 @@ mysite  | [notice] using the "epoll" event method
 mysite  | [notice] nginx/1.31.0 built by gcc 15.2.0 (Alpine)
 mysite  | [notice] OS: Linux 6.10.14-linuxkit
 mysite  | [notice] start worker processes (30, 31, 32, 33)
+
+## Danish 
+
+**What I Worked On:**
+
+Installed Docker and Docker Compose and explored their main functionalities.
+Successfully pulled and deployed an Nginx web server using a Docker container.
+Used bind mounts to share files between the host system and the container.
+Worked with Docker volumes to enable live development and maintain persistent data.
+Created and managed container configurations using Docker Compose.
+
+**What I Learned:**
+
+Understood how Docker containers make application deployment easier and more consistent.
+Learned how to run and configure Nginx within a containerized environment.
+Gained practical knowledge of bind mounts and volumes for file sharing and persistent storage.
+Learned how Docker Compose can be used to manage multiple services and container configurations.
+Understood how Docker automatically pulls required images, such as nginx:alpine, from Docker Hub when they are not available locally.
+
+**Blockers / Questions:**
+
+Faced some difficulties while configuring containers and setting up the correct volume mappings.
+Need more practice with Docker commands, container management, and Docker Compose workflows.
+Initially faced some confusion while configuring volumes and connecting them correctly to the containers.
+Encountered a minor Nginx issue related to the missing favicon.ico file during deployment.
 
 # Tuesday 26-05-2026
 ## Eshwar Yadav
@@ -557,6 +640,35 @@ I found it interesting to observe other teams’ innovative project ideas and ho
 **Key Takeaways:**
  Consolidated my understanding of Python-based API design and end-to-end full-stack integration.
 
+## Danish 
+
+**What I Worked On:**
+
+Developed a FastAPI application following the MVC architecture.
+Created Pydantic schemas to validate and structure task-related data.
+Implemented API routes using FastAPI’s APIRouter.
+Added business logic through a dedicated TaskService layer.
+Implemented basic CRUD functionality, including creating, retrieving, and deleting tasks.
+Tested and verified API endpoints using Swagger UI (/docs).
+Integrated the React frontend with the FastAPI backend.
+Added functionality to create and delete tasks directly from the frontend.
+Connected the frontend API layer (api.js) with the backend services.
+
+**What I Learned:**
+
+Learned how the MVC architecture separates controllers, services, and models.
+Understood how APIRouter is used to organize and handle API requests in FastAPI.
+Learned how Pydantic helps validate incoming and outgoing data.
+Gained practical experience in building and testing CRUD APIs with FastAPI.
+Learned how React communicates with backend APIs using fetch.
+Understood the importance of keeping business logic within the service layer for better code organization.
+
+**Blockers / Questions:**
+
+Faced some issues while setting up the virtual environment and installing Uvicorn.
+Encountered React import/export errors during API integration.
+Troubleshot incorrect API endpoint paths that were causing 404 errors.
+Need more practice with React state management and frontend-backend API integration.
 
 
 # Thursday 04-06-2026
@@ -737,6 +849,23 @@ Focus on deeper mastery of advanced React state management patterns.
 - Gained experience with FastAPI dependency injection for database sessions and services.
 - Learned how Pydantic schemas interact with ORM objects using from_attributes=True.
 - Improved understanding of structured backend architecture using Controller → Service → Repository → Database layers.
+
+## Danish
+
+**What I Worked On:**
+
+Worked on the frontend development of the website.
+Improved the user interface and worked on creating a better layout and user experience.
+Implemented and adjusted frontend components to improve website functionality.
+
+**What I Learned:**
+
+Learned how frontend components are structured and connected to create a complete website.
+Improved my understanding of UI design, responsiveness, and frontend development workflow.
+
+**Blockers / Questions:**
+
+Need more practice with frontend technologies and improving the overall design consistency.
 
 
 # Tuesday 16-06-2026
