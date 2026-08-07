@@ -1191,7 +1191,30 @@ Fixed token issues between frontend and backend.
 Still need to look into refresh tokens for better security.
 Still need to learn role-based permissions.
 
+## Danish 
 
+What I Worked On
+* Implemented JWT authentication and secured API routes against unauthorized access.
+* Established token-based access control and user login workflows.
+* Enforced data isolation by linking tasks directly to the authenticated user's account.
+* Restricted data access to ensure users can only modify their own resources.
+* Updated frontend API services to include authorization tokens in request headers.
+* Verified security integrity by testing login flows, task lifecycles, and permission boundaries.
+
+What I Learned
+* Mastered using JWTs to secure stateless backend APIs.
+* Leveraged FastAPI's Depends() system to streamline authentication middleware.
+* Clarified the operational boundaries between authentication and authorization.
+* Designed database relationships to bind user identities to specific data records.
+* Aligned frontend and backend communication patterns for secure data transmission.
+* Standardized API error responses for 401 Unauthorized and 403 Forbidden status codes.
+
+Questions / Blockers
+* Resolved issues regarding injecting the logged-in user context into the task service layer.
+* Fixed permission leaks and unauthorized-access bugs across protected endpoints.
+* Remedied frontend token storage and transmission mismatches.
+* Next Step: Researching refresh token rotations to improve session security.
+* Next Step: Exploring role-based access control (RBAC) architectures for granular permissions.
 
 # Tuesday 07-07-2026
 ## Eshwar Yadav
