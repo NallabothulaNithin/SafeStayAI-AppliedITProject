@@ -1277,3 +1277,19 @@ Want more practice writing advanced tests.
 - Needed clarification on dependency overrides and test database sessions.
 - Faced challenges understanding authentication and authorization test flows.
 - Need more practice creating test scenarios and debugging failed test cases..
+
+## Danish 
+
+**What I Worked On**
+
+Developed unit tests for TaskService utilizing mock data repositories.Created integration tests using FastAPI TestClient to validate endpoint performance.
+Implemented authorization test cases to verify user-specific access controls.Covered edge cases including task lifecycle operations, payload validation, and exceptions.
+
+**What I Learned**
+
+Gained clarity on distinguishing unit, integration, and authorization testing boundaries.Mastered using test clients and fake repositories to isolate system behavior.
+Explored how permission layers secure user data during API requests.Deepened technical skills in pytest assertions and HTTP exception handling.
+
+**Questions / Blockers**
+
+Seeking guidance on managing dependency overrides and test database sessions effectively.Working through complex authentication flows within the test environment.Moving forward with building more comprehensive test scenarios and streamlining debugging.
